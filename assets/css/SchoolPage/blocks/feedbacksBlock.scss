@@ -1,0 +1,204 @@
+@import "../../variables";
+
+.feedbacks-box {
+  background: #F6F7FF;
+  padding-top: 50px;
+  padding-bottom: 60px;
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 370px;
+    grid-column-gap: 30px;
+  }
+
+  &__desc {
+    p, strong {
+      font-size: 18px;
+      line-height: 140%;
+      margin-bottom: 25px;
+    }
+
+    strong {
+      font-family: $museo-bold;
+    }
+  }
+
+  h2 {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 21px;
+    margin-top: 43px;
+  }
+
+  &__feeds {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+
+    .feed-item {
+      background: #FFFFFF;
+      border-radius: 7px;
+      padding: 30px 30px 34px;
+
+      .personal-info {
+        .up {
+          display: flex;
+          margin-bottom: 13px;
+
+          .name {
+            font-size: 18px;
+            line-height: 140%;
+            margin-right: 15px;
+            font-family: $museo-bold;
+          }
+
+          .rating {
+            margin-bottom: 0;
+          }
+        }
+
+        .sub-up {
+          color: $grey;
+          display: flex;
+          margin-bottom: 25px;
+
+          time, p {
+            font-size: 16px;
+            line-height: 140%;
+          }
+
+          time {
+            margin-right: 30px;
+          }
+        }
+      }
+
+      .feed-body {
+        p {
+          font-size: 18px;
+          line-height: 140%;
+          margin-bottom: 30px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .cards-box__pages {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+
+    .pages-list {
+      display: flex;
+      width: 195px;
+      justify-content: space-between;
+
+      .page {
+        font-size: 18px;
+        line-height: 140%;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      .selected-page {
+        color: $violet;
+        background-color: $white;
+        box-shadow: 0 5px 30px rgba(41, 8, 13, 0.15);
+      }
+    }
+
+    @media (max-width: $sm) {
+      .pages-list {
+        width: 173px;
+        .page {
+          font-size: 16px;
+          height: 34px;
+          width: 34px;
+        }
+      }
+    }
+  }
+
+  .right-side {
+    position: relative;
+    display: grid;
+    grid-template-rows: min-content min-content;
+
+    .school-card {
+      position: fixed;
+      margin-top: -191px;
+      padding: 40px 25px 19px;
+      background: #FFFFFF;
+      box-shadow: 0 5px 30px rgba(41, 8, 13, 0.15);
+      border-radius: 7px;
+      width: 100%;
+      max-width: 370px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .logo {
+        height: 50px;
+        width: 180px;
+        background: no-repeat top right;
+        background-size: contain;
+        margin-bottom: 30px;
+      }
+
+      .rating {
+        margin-bottom: 31px;
+      }
+
+      .to-site {
+        font-family: $museo-bold;
+      }
+    }
+
+    .school-info {
+      padding: 33px 29px 27px;
+      background: #FFFFFF;
+      border-radius: 7px;
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: 89px;
+
+      span {
+        color: $grey;
+        font-size: 16px;
+        line-height: 140%;
+      }
+
+      p {
+        font-size: 18px;
+        margin-bottom: 25px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .scrollingCard {
+    .school-card {
+      position: fixed;
+    }
+  }
+
+  .stickyEnd {
+    .school-card {
+      position: absolute;
+    }
+  }
+}

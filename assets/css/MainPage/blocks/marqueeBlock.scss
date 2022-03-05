@@ -1,0 +1,106 @@
+@import "../../variables";
+
+.feedbackBlock {
+  background: #F7F7FF;
+  padding: 30px 0 0;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+
+  .marquee {
+    animation: marquee 200s linear infinite;
+
+    .marqueeItems {
+      display: flex;
+      flex-direction: row;
+      margin-left: -195px;
+      float: left;
+      flex-wrap: wrap;
+
+      .feedbackCard {
+        background: #FFFFFF;
+        border-radius: 7px;
+        cursor: pointer;
+        padding: 19px 30px;
+        box-sizing: border-box;
+        margin-right: 30px;
+        width: 570px;
+        margin-bottom: 30px;
+        position: relative;
+        height: 108px;
+        transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1) 0s;
+        display: grid;
+        grid-template-areas:
+                "up up"
+                "rating feedNum";
+        grid-template-columns: min-content 1fr;
+
+        &:hover {
+          filter: drop-shadow(0px 3px 20px rgba(41, 8, 13, 0.15));
+          transition: all 0.3s;
+
+          .rating > a {
+            color: $purple;
+          }
+        }
+
+        &:nth-child(4) {
+          margin-left: 195px;
+        }
+
+        .up {
+          grid-area: up;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-bottom: 0;
+
+          .name {
+            margin-top: 0;
+            font-weight: 600;
+            font-size: 23px;
+            line-height: 28px;
+            color: $black;
+          }
+
+          .logoCentr {
+            width: 140px;
+            height: 38px;
+          }
+        }
+
+        .rating {
+          grid-area: rating;
+        }
+
+        .feedNum {
+          color: $violet;
+          margin-left: 16px;
+          grid-area: feedNum;
+          transition: color 0.3s;
+
+          &:hover {
+            color: $purple;
+            transition: color 0.3s;
+          }
+        }
+      }
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translate(0%, 0%);
+      }
+      100% {
+        transform: translate(-5400px, 0%);
+      }
+    }
+  }
+
+  .feedbackButton {
+    width: 290px;
+    height: 70px;
+    font-family: 'Museo Sans Cyrl 500', serif;
+    margin: 40px auto 50px;
+  }
+}

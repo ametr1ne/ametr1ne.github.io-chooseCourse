@@ -1,0 +1,73 @@
+@import "../variables";
+
+.popup {
+  position: absolute;
+  margin-top: -20px;
+  padding-top: 40px;
+  z-index: -1;
+  visibility: hidden;
+
+  .popup-content {
+    color: $black;
+    z-index: 10;
+    padding: 23px 30px;
+    background: $white;
+    border-radius: 7px;
+    max-width: 570px;
+    font-family: "Museo Sans Cyrl 300", serif;
+    box-shadow: 0 5px 30px rgba(41, 8, 13, 0.15);
+
+    &::before {
+      position: absolute;
+      top: 27px;
+      left: 32px;
+      content: '';
+      width: 0;
+      height: 0;
+      border: 7px solid transparent;
+      border-bottom-color: $white;
+    }
+
+    p, a {
+      font-size: 16px;
+      line-height: 130%;
+    }
+
+    p {
+      margin-bottom: 20px;
+
+      strong {
+        font-family: $museo-bold;
+      }
+    }
+
+    a {
+      color: $violet;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $purple;
+        transition: color 0.3s;
+      }
+    }
+  }
+
+  @media (max-width: $md) {
+    left: 15px;
+    right: 15px;
+
+    .popup-content {
+      padding: 16px;
+
+      p, a {
+        font-size: 14px;
+        line-height: 130%;
+      }
+
+      p {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,662 @@
+.feedbacks-box {
+  background: #F6F7FF;
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+.feedbacks-box .content {
+  display: grid;
+  grid-template-columns: 1fr 370px;
+  grid-column-gap: 30px;
+}
+.feedbacks-box__desc p, .feedbacks-box__desc strong {
+  font-size: 18px;
+  line-height: 140%;
+  margin-bottom: 25px;
+}
+.feedbacks-box__desc strong {
+  font-family: "Museo Sans Cyrl 500";
+}
+.feedbacks-box h2 {
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 21px;
+  margin-top: 43px;
+}
+.feedbacks-box__feeds {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 30px;
+}
+.feedbacks-box__feeds .feed-item {
+  background: #FFFFFF;
+  border-radius: 7px;
+  padding: 30px 30px 34px;
+}
+.feedbacks-box__feeds .feed-item .personal-info .up {
+  display: flex;
+  margin-bottom: 13px;
+}
+.feedbacks-box__feeds .feed-item .personal-info .up .name {
+  font-size: 18px;
+  line-height: 140%;
+  margin-right: 15px;
+  font-family: "Museo Sans Cyrl 500";
+}
+.feedbacks-box__feeds .feed-item .personal-info .up .rating {
+  margin-bottom: 0;
+}
+.feedbacks-box__feeds .feed-item .personal-info .sub-up {
+  color: #A3AABC;
+  display: flex;
+  margin-bottom: 25px;
+}
+.feedbacks-box__feeds .feed-item .personal-info .sub-up time, .feedbacks-box__feeds .feed-item .personal-info .sub-up p {
+  font-size: 16px;
+  line-height: 140%;
+}
+.feedbacks-box__feeds .feed-item .personal-info .sub-up time {
+  margin-right: 30px;
+}
+.feedbacks-box__feeds .feed-item .feed-body p {
+  font-size: 18px;
+  line-height: 140%;
+  margin-bottom: 30px;
+}
+.feedbacks-box__feeds .feed-item .feed-body p:last-child {
+  margin-bottom: 0;
+}
+.feedbacks-box .cards-box__pages {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+.feedbacks-box .cards-box__pages .pages-list {
+  display: flex;
+  width: 195px;
+  justify-content: space-between;
+}
+.feedbacks-box .cards-box__pages .pages-list .page {
+  font-size: 18px;
+  line-height: 140%;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.feedbacks-box .cards-box__pages .pages-list .selected-page {
+  color: #7000FF;
+  background-color: #ffffff;
+  box-shadow: 0 5px 30px rgba(41, 8, 13, 0.15);
+}
+@media (max-width: 768px) {
+  .feedbacks-box .cards-box__pages .pages-list {
+    width: 173px;
+  }
+  .feedbacks-box .cards-box__pages .pages-list .page {
+    font-size: 16px;
+    height: 34px;
+    width: 34px;
+  }
+}
+.feedbacks-box .right-side {
+  position: relative;
+  display: grid;
+  grid-template-rows: min-content min-content;
+}
+.feedbacks-box .right-side .school-card {
+  position: fixed;
+  margin-top: -191px;
+  padding: 40px 25px 19px;
+  background: #FFFFFF;
+  box-shadow: 0 5px 30px rgba(41, 8, 13, 0.15);
+  border-radius: 7px;
+  width: 100%;
+  max-width: 370px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.feedbacks-box .right-side .school-card .logo {
+  height: 50px;
+  width: 180px;
+  background: no-repeat top right;
+  background-size: contain;
+  margin-bottom: 30px;
+}
+.feedbacks-box .right-side .school-card .rating {
+  margin-bottom: 31px;
+}
+.feedbacks-box .right-side .school-card .to-site {
+  font-family: "Museo Sans Cyrl 500";
+}
+.feedbacks-box .right-side .school-info {
+  padding: 33px 29px 27px;
+  background: #FFFFFF;
+  border-radius: 7px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 89px;
+}
+.feedbacks-box .right-side .school-info span {
+  color: #A3AABC;
+  font-size: 16px;
+  line-height: 140%;
+}
+.feedbacks-box .right-side .school-info p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+.feedbacks-box .right-side .school-info p:last-child {
+  margin-bottom: 0;
+}
+.feedbacks-box .scrollingCard .school-card {
+  position: fixed;
+}
+.feedbacks-box .stickyEnd .school-card {
+  position: absolute;
+}
+
+.courses-table {
+  margin-top: 44px;
+}
+
+.courses-table .grey-text {
+  font-size: 16px;
+  line-height: 22px;
+  color: #A3AABC;
+}
+
+.courses-table__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 43px;
+}
+
+.courses-table__info .courses-table__sort {
+  display: flex;
+  align-items: center;
+}
+
+.courses-table__info .courses-table__sort > p {
+  margin-right: 19px;
+}
+
+.courses-table__info .courses-table__sort .sort-buttons {
+  display: flex;
+}
+
+.courses-table__info .courses-table__sort .rating-btn {
+  width: 172px;
+  height: 38px;
+  margin-right: 20px;
+}
+
+.courses-table__info .courses-table__sort .free-btn {
+  width: 143px;
+  height: 38px;
+}
+
+.courses-table__info .courses-table__author {
+  display: flex;
+  align-items: center;
+}
+
+.courses-table__info .courses-table__author .author {
+  margin-right: 38px;
+}
+
+.courses-table__info .courses-table__author .author > span {
+  color: #7000FF;
+  transition: color 0.3s;
+}
+
+.courses-table__info .courses-table__author .author > span:hover {
+  cursor: pointer;
+  color: #E8007D;
+  transition: color 0.3s;
+}
+
+.courses-table__info .courses-table__author .date > time {
+  color: #000000;
+}
+
+.courses-table__table .table-title {
+  margin-bottom: 27px;
+}
+
+.courses-table__table .table-title .rkc::after {
+  position: absolute;
+  top: -7px;
+  height: 16px;
+  width: 16px;
+  content: url("../../images/hint.png");
+}
+
+.courses-table__table .table-title .rkc__popup .popup-content {
+  min-width: 520px;
+}
+
+.courses-table__table .table-title .open-popup .rkc__popup {
+  z-index: 10;
+  visibility: visible;
+}
+
+.courses-table__table .courses-table__item {
+  transition: box-shadow 0.3s;
+  border-top: 1px solid #DFE3ED;
+  padding-top: 23px;
+  padding-bottom: 25px;
+  position: relative;
+  z-index: 2;
+}
+
+.courses-table__table .courses-table__item:last-child {
+  border-bottom: 1px solid #DFE3ED;
+}
+
+.courses-table__table .courses-table__item:hover {
+  cursor: pointer;
+  box-shadow: 0 5px 30px rgba(41, 8, 13, 0.15);
+  transition: box-shadow 0.3s;
+}
+
+.courses-table__table .row {
+  display: grid;
+  grid-template-areas: "sequence courname rkc school price credit duration linkitem" "sequence courlink rkc school price credit duration linkitem";
+  grid-template-columns: 25px 1fr 70px 1fr minmax(100px, 120px) 120px 120px 186px;
+}
+
+.courses-table__table .row .sequence-item {
+  grid-area: sequence;
+  color: #A3AABC;
+}
+
+.courses-table__table .row .name-item {
+  grid-area: courname;
+  font-family: "Museo Sans Cyrl 500";
+  font-size: 18px;
+  margin-bottom: 14px;
+  margin-right: 20px;
+}
+
+.courses-table__table .row .courlink-item {
+  grid-area: courlink;
+  font-size: 16px;
+  color: #7000FF;
+}
+
+.courses-table__table .row .courlink-item:hover {
+  color: #E8007D;
+}
+
+.courses-table__table .row .rkc-item {
+  grid-area: rkc;
+  font-size: 18px;
+  color: #169F00;
+}
+
+.courses-table__table .row .school-item {
+  grid-area: school;
+  padding-right: 10px;
+}
+
+.courses-table__table .row .school-item__name {
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+
+.courses-table__table .row .school-item__rating {
+  margin-bottom: 16px;
+}
+
+.courses-table__table .row .school-item__feedbacks {
+  font-size: 16px;
+  color: #7000FF;
+}
+
+.courses-table__table .row .school-item__feedbacks:hover {
+  color: #E8007D;
+}
+
+.courses-table__table .row .price-item, .courses-table__table .row .credit-item, .courses-table__table .row .duration-item {
+  font-size: 18px;
+}
+
+.courses-table__table .row .price-item {
+  grid-area: price;
+}
+
+.courses-table__table .row .credit-item {
+  grid-area: credit;
+}
+
+.courses-table__table .row .duration-item {
+  grid-area: duration;
+}
+
+.courses-table__table .row .link-item {
+  grid-area: linkitem;
+}
+
+.courses-table__table .row .link-item .link {
+  width: 186px;
+  height: 45px;
+  font-size: 18px;
+  padding: 0;
+}
+
+.all-courses {
+  padding-top: 103px;
+  padding-bottom: 120px;
+}
+.all-courses h2 {
+  font-size: 40px;
+  line-height: 48px;
+}
+.all-courses .courses-table__info {
+  margin-top: 42px;
+}
+.all-courses .courses-table__info .courses-table__sort > p {
+  margin-right: 38px;
+}
+.all-courses .courses-table__info .courses-table__sort .rating-btn {
+  width: unset;
+  height: unset;
+  margin-right: 37px;
+}
+.all-courses .courses-table__info .courses-table__sort .free-btn {
+  width: unset;
+  height: unset;
+}
+.all-courses .courses-table__info .courses-table__sort .sort-set {
+  color: #7000FF;
+}
+.all-courses .courses-table__info .courses-table__sort .sort-set:hover {
+  color: #E8007D;
+}
+.all-courses .courses-table__item {
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+.all-courses .courses-table__table .row {
+  display: grid;
+  grid-template-areas: "courname rkc school price credit duration linkitem";
+  grid-template-columns: 1fr 107px 154px minmax(100px, 150px) 150px 150px 160px;
+  grid-template-rows: min-content;
+}
+.all-courses .courses-table__table .row .name-item {
+  margin-bottom: 0;
+}
+.all-courses .courses-table__table .row .name-item .name-link {
+  font-family: "Museo Sans Cyrl 300", serif;
+  color: #7000FF;
+  transition: color 0.3s;
+}
+.all-courses .courses-table__table .row .name-item .name-link:hover {
+  color: #E8007D;
+  transition: color 0.3s;
+}
+.all-courses .courses-table__table .row .link-item .link {
+  color: #7000FF;
+  font-size: 18px;
+  line-height: 140%;
+  border-radius: 7px;
+  position: relative;
+  top: -10px;
+  left: -23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+.all-courses .courses-table__table .row .link-item .link:hover {
+  color: #ffffff;
+  background: #7000FF;
+  transition: all 0.3s;
+}
+
+.head-present {
+  width: 100%;
+  padding-top: 109px;
+  background: #FCF1FF;
+}
+.head-present .box {
+  display: grid;
+  grid-template-areas: "navigation headimage" "title headimage";
+  grid-template-columns: 1fr;
+}
+.head-present .navigation {
+  font-size: 18px;
+  margin-top: 60px;
+  grid-area: navigation;
+}
+.head-present .navigation span {
+  color: #A3AABC;
+}
+.head-present .title {
+  grid-area: title;
+  max-width: 874px;
+  margin-top: 43px;
+  font-family: "Museo Sans Cyrl 500", serif;
+  font-size: 60px;
+  margin-bottom: 44px;
+}
+.head-present .head-image {
+  margin-top: 60px;
+  grid-area: headimage;
+}
+.head-present .head-image__image {
+  width: 170px;
+  height: 170px;
+}
+@media (max-width: 1024px) {
+  .head-present {
+    padding-top: 58px;
+  }
+  .head-present .box {
+    grid-template-areas: "navigation" "headimage" "title";
+  }
+  .head-present .navigation {
+    font-size: 16px;
+    margin-top: 24px;
+  }
+  .head-present .title {
+    max-width: 400px;
+    margin-top: 16px;
+    font-size: 30px;
+    margin-bottom: 22px;
+  }
+  .head-present .head-image {
+    margin-top: 26px;
+  }
+  .head-present .head-image__image {
+    margin-top: 0;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.rating {
+  width: 115px;
+  height: 21px;
+  background: url("../../images/star_yellow.svg") repeat-x;
+}
+.rating .rating-fill {
+  height: 21px;
+  background: url("../../images/star_fill.svg") repeat-x;
+  width: 80%;
+}
+
+.form {
+  background: #FFFFFF;
+  border-radius: 7px;
+  padding: 30px 30px 25px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.form .label {
+  font-size: 23px;
+  line-height: 28px;
+  font-family: "Museo Sans Cyrl 500";
+  margin-bottom: 20px;
+}
+.form .input-box {
+  transition: margin-top 0.3s;
+  position: relative;
+}
+.form .input-box label {
+  transform: translateY(16px);
+  position: absolute;
+  color: #A3AABC;
+  cursor: text;
+  font-size: 18px;
+  transition: transform, font-size 0.3s;
+}
+.form .input-box .input {
+  width: 100%;
+  padding: 16px 16px 16px 0;
+  margin-bottom: 20px;
+  font-family: inherit;
+  font-size: 18px;
+  box-sizing: border-box;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+.form .input-box .input:last-child {
+  margin-bottom: 40px;
+}
+@media (max-width: 1024px) {
+  .form .input-box .input:last-child {
+    margin-bottom: 31px;
+  }
+}
+.form .input-box .textarea {
+  overflow: hidden;
+  padding-bottom: 0;
+}
+.form .moving-lables {
+  transition: margin-top 0.3s;
+}
+.form .moving-lables label {
+  font-size: 16px;
+  cursor: default;
+  transform: translateY(-16px);
+  transition: font-size, transform 0.3s;
+}
+@media (max-width: 1024px) {
+  .form .moving-lables label {
+    font-size: 14px !important;
+  }
+}
+.form .send {
+  height: 60px;
+  font-family: "Museo Sans Cyrl 500";
+}
+@media (max-width: 1024px) {
+  .form .input-box label {
+    transition: font-size, transform 0.3s;
+    font-size: 16px;
+  }
+}
+
+.clear-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.clear-form .label, .clear-form p, .clear-form label, .clear-form .input, .clear-form .send {
+  visibility: hidden;
+}
+.clear-form h3 {
+  position: absolute;
+  font-size: 23px;
+  line-height: 140%;
+  text-align: center;
+  font-family: "Museo Sans Cyrl 500";
+}
+@media (max-width: 1024px) {
+  .clear-form h3 {
+    font-size: 19px;
+    line-height: 23px;
+  }
+}
+
+.popup {
+  position: absolute;
+  margin-top: -20px;
+  padding-top: 40px;
+  z-index: -1;
+  visibility: hidden;
+}
+.popup .popup-content {
+  color: #000000;
+  z-index: 10;
+  padding: 23px 30px;
+  background: #ffffff;
+  border-radius: 7px;
+  max-width: 570px;
+  font-family: "Museo Sans Cyrl 300", serif;
+  box-shadow: 0 5px 30px rgba(41, 8, 13, 0.15);
+}
+.popup .popup-content::before {
+  position: absolute;
+  top: 27px;
+  left: 32px;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-bottom-color: #ffffff;
+}
+.popup .popup-content p, .popup .popup-content a {
+  font-size: 16px;
+  line-height: 130%;
+}
+.popup .popup-content p {
+  margin-bottom: 20px;
+}
+.popup .popup-content p strong {
+  font-family: "Museo Sans Cyrl 500";
+}
+.popup .popup-content a {
+  color: #7000FF;
+  transition: color 0.3s;
+}
+.popup .popup-content a:hover {
+  color: #E8007D;
+  transition: color 0.3s;
+}
+@media (max-width: 1024px) {
+  .popup {
+    left: 15px;
+    right: 15px;
+  }
+  .popup .popup-content {
+    padding: 16px;
+  }
+  .popup .popup-content p, .popup .popup-content a {
+    font-size: 14px;
+    line-height: 130%;
+  }
+  .popup .popup-content p {
+    margin-bottom: 10px;
+  }
+}
+
+.head-present {
+  background: #ffffff;
+}
+.head-present .content .box .title {
+  max-width: unset;
+}
+
+/*# sourceMappingURL=schoolStyles.css.map */

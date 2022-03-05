@@ -1,0 +1,616 @@
+@import "variables";
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Museo Sans Cyrl 300', serif;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  --burger-color: #000;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+.stopScroll {
+  overflow: hidden;
+}
+
+h2 {
+  font-family: 'Museo Sans Cyrl 500', serif;
+  font-size: 40px;
+  color: $black;
+}
+
+a, p, strong, span, h1, h2, h3, h4, h5, h6, ul, li, menu {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .dark {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: -1;
+  }
+
+  .background {
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 130;
+  }
+}
+
+.content {
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0 15px;
+}
+
+a {
+  font-weight: normal;
+  font-size: 18px;
+  color: $black;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    transition: color 0.3s;
+    cursor: pointer;
+    color: $violet;
+  }
+
+  @media (max-width: $md) {
+    font-size: 16px;
+  }
+}
+
+button {
+  border: none;
+  font-size: 18px;
+  font-family: inherit;
+  transition: all 0.3s;
+  border-radius: 7px;
+
+  &:hover {
+    cursor: pointer;
+    background: $purple !important;
+    color: $white !important;
+    transition: background 0.3s;
+  }
+
+  @media (max-width: $md) {
+    font-size: 16px;
+  }
+}
+
+.btn-violet {
+  border: none;
+  height: 60px;
+  background: #7000FF !important;
+  border-radius: 7px;
+  color: $white !important;
+  width: 100%;
+  display: flex;
+  font-family: "Museo Sans Cyrl 300", serif;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s;
+
+  &:hover {
+    background: $purple !important;
+    color: $white !important;
+    transition: background 0.3s;
+  }
+}
+
+.btn-white {
+  border: 1px solid rgba(112, 0, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  font-family: "Museo Sans Cyrl 300", serif;
+  color: $violet;
+  border-radius: 7px;
+  transition: background 0.3s;
+
+  &:hover {
+    background: $purple !important;
+    color: $white !important;
+    transition: background 0.3s;
+  }
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 109px;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  background: $white;
+  border-bottom: 1px solid $var2;
+  z-index: 1000;
+
+  .header {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: unset;
+    padding: 0 60px 0 50px;
+
+    .left {
+      display: flex;
+      margin: auto 0;
+
+      .logoAndButton {
+        display: flex;
+        flex-direction: row;
+
+        .logo {
+          display: flex;
+          align-items: center;
+          position: relative;
+
+          svg {
+            float: left;
+          }
+        }
+      }
+
+      .coursesBtn {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 71px;
+        width: 305px;
+        height: 55px;
+        cursor: pointer;
+        box-shadow: 0 5px 30px rgba(41, 8, 13, 0.15);
+        border-radius: 7px;
+        font-size: 18px;
+        color: $black;
+        transition: all 0.3s;
+
+        svg {
+          position: absolute;
+          left: 23px;
+
+          line {
+            transition: all 0.3s;
+          }
+        }
+
+        p {
+          left: 43px;
+          position: absolute;
+          margin-left: 19px;
+        }
+
+        #burger {
+          visibility: visible;
+          transform: rotate(-180deg) translateZ(1px);
+          transition: all 0.3s;
+        }
+
+        #x {
+          opacity: 0;
+          left: 25px;
+          visibility: hidden;
+          transition: all 0.3s;
+        }
+
+        &:hover {
+          color: $white;
+          background-color: $purple;
+          --burger-color: #fff;
+          transition: all 0.3s;
+
+          line {
+            transition: all 0.3s;
+          }
+        }
+      }
+    }
+
+    .feedback {
+      display: flex;
+      flex-direction: row;
+
+      .starBtn {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 7px;
+        border: none;
+        margin: auto 13px auto 0;
+        background-color: $violet;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: $purple;
+          transition: background-color 0.3s;
+        }
+      }
+
+      a {
+        margin: auto 0;
+      }
+    }
+  }
+}
+
+.menu {
+  visibility: hidden;
+  position: fixed;
+  padding: 109px 0 0;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  width: 100%;
+  z-index: 200;
+  min-height: 772px;
+  background-color: $white;
+
+  #schoolFeedback {
+    margin-left: 23px;
+    display: none;
+  }
+
+  .menuList {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin: 50px auto 0;
+    float: left;
+    width: 271px;
+
+    .menuItem {
+      position: static;
+      list-style: none;
+      margin-bottom: 20px;
+      overflow: auto;
+
+      .titleMenu {
+        display: flex;
+
+        .drop {
+          display: none;
+          margin-right: 14px;
+        }
+
+        .menuLink {
+          font-family: 'Museo Sans Cyrl 500', serif;
+          font-size: 23px;
+        }
+      }
+
+      .subMenuList {
+        visibility: hidden;
+        position: absolute;
+        min-height: 300px;
+        left: 100%;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 600px;
+
+        li {
+          list-style: none;
+          margin-bottom: 20px;
+          width: 270px;
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $md) {
+    padding-top: 58px;
+    min-height: unset;
+    height: 100%;
+
+    #schoolFeedback {
+      display: block;
+    }
+
+    .menuList {
+      position: static;
+      margin: 31px 0 0;
+      float: unset;
+      width: 100%;
+
+      .menuItem {
+        overflow: hidden;
+
+        .titleMenu {
+
+          .drop {
+            display: block;
+            transition: transform 0.3s;
+          }
+
+          .menuLink {
+            font-size: 19px;
+          }
+        }
+
+        .ulBox {
+          max-height: 0;
+          margin-left: 25px;
+          transition: max-height 0.3s;
+
+          .subMenuList {
+            visibility: visible;
+            position: static;
+            min-height: unset;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            max-height: unset;
+            margin-left: 0;
+
+            li {
+              width: 100%;
+              margin-bottom: 0;
+              margin-top: 23px;
+              flex-wrap: unset;
+
+              a {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: $sm) {
+    .menuList {
+      margin-top: 31px;
+    }
+  }
+}
+
+.active {
+  .header {
+    .left {
+
+      .coursesBtn {
+        background-color: $violet;
+        box-shadow: none;
+        color: $white;
+
+        #burger {
+          opacity: 0;
+          visibility: hidden;
+          transform: rotate(180deg);
+        }
+
+        #x {
+          opacity: 1;
+          visibility: visible;
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  .menu {
+    visibility: visible;
+
+    .menuList {
+      .menuItem {
+        @media (min-width: 1024px) {
+          .subMenuList_active {
+            display: flex;
+            visibility: visible;
+          }
+        }
+      }
+
+      .openDropDown {
+        max-height: min-content;
+        transition: max-height 0.3s;
+
+        .titleMenu {
+          .drop {
+            transform: rotate(180deg);
+            transition: transform 0.3s;
+          }
+        }
+
+        .ulBox {
+          max-height: 1800px;
+          transition: max-height 0.3s;
+
+          @media (min-width: 1024px) {
+            .subMenuList {
+              visibility: visible;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  height: 120px;
+  background: $var11;
+
+  .footer {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    .links {
+      display: flex;
+      flex-direction: row;
+
+      a {
+        margin-right: 30px;
+      }
+    }
+
+    .socialMedia {
+      display: flex;
+      flex-flow: row;
+
+      div {
+        width: 30px;
+        height: 30px;
+        border: none;
+        border-radius: 7px;
+        margin-left: 8px;
+        cursor: pointer;
+        background: $var14;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+
+        &:hover {
+          background: $violet;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $md) {
+    height: min-content;
+    .footer {
+      flex-direction: column;
+      justify-content: unset;
+      padding-bottom: 20px;
+
+      .links {
+        margin: 30px 0 34px;
+
+        a {
+          margin-right: 10px;
+          font-size: 18px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: $sm) {
+    .footer {
+      align-items: start;
+
+      .links {
+        flex-direction: column;
+
+        a {
+          margin-bottom: 12px;
+        }
+      }
+
+      .socialMedia {
+        div {
+          margin-left: 0;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
+
+header {
+  @media (max-width: 1250px) {
+    .header {
+      max-width: 1170px;
+      padding: 0 15px;
+    }
+  }
+
+  @media (max-width: $md) {
+    height: auto;
+
+    .header {
+      .left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .logoAndButton {
+          display: flex;
+          justify-content: space-between;
+
+          .logo {
+            svg {
+              width: 200px;
+            }
+          }
+
+          .coursesBtn {
+            height: 35px;
+            width: 46px;
+            //margin-left: 0;
+            display: flex;
+            justify-content: center;
+            margin: 11px 0 12px;
+
+            svg {
+              left: 10px;
+            }
+
+            #x {
+              left: 13px;
+            }
+
+            p {
+              display: none;
+            }
+          }
+        }
+
+      }
+
+      .feedback {
+        display: none;
+      }
+    }
+  }
+}
+

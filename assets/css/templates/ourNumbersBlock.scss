@@ -1,0 +1,89 @@
+@import "../variables";
+
+.ourNumbers {
+  padding-top: 87px;
+  display: flex;
+  flex-direction: row;
+
+  .numbers {
+    display: flex;
+  }
+
+  .schools {
+    display: flex;
+    flex-direction: column;
+    margin-right: 125px;
+
+    span {
+      margin-left: 5px;
+    }
+  }
+
+  .courses {
+    display: flex;
+    flex-direction: column;
+    margin-right: 92px;
+
+    span {
+      margin-left: 5px;
+    }
+  }
+
+  p {
+    line-height: 140%;
+  }
+
+  .desc {
+    font-weight: normal;
+    font-size: 23px;
+    color: $black;
+    padding-top: 23px;
+
+    .desc_1 {
+      padding-bottom: 30px;
+    }
+  }
+
+  strong {
+    font-family: 'Museo Sans Cyrl 500', serif;
+    font-size: 60px;
+    color: $black;
+  }
+
+  @media (max-width: $md) {
+    padding-top: 40px;
+    flex-direction: column;
+
+    .schools {
+      margin-right: 78px;
+    }
+
+    .courses {
+      margin-right: 0;
+    }
+
+    .dig {
+      flex-direction: row;
+
+      span {
+        margin-left: 5px;
+        padding-top: 13px;
+      }
+    }
+
+    .desc {
+      font-size: 16px;
+
+      .desc_1 {
+        padding-bottom: 15px;
+      }
+    }
+
+    strong {
+      font-size: 30px;
+    }
+  }
+
+  @media (max-width: $sm) {
+  }
+}

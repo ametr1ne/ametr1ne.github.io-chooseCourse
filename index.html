@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/normal.css">
+    <link rel="stylesheet" href="assets/css/MainPage/mainStyles.css">
+    <link rel="stylesheet" href="assets/css/MainPage/mobile.css">
+    <title>choose course</title>
+</head>
+<body>
+<div id="wrapper">
+    <div class="dark" id="dark"></div>
+    <header>
+        <div class="content header">
+            <div class="left">
+                <div class="logoAndButton">
+                    <a class="logo" href="/">
+                        <svg width="260" height="28" viewBox="0 0 260 28" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 15.27C0 21.8966 5.37666 27.2748 12.0015 27.2748V3.26526C5.37666 3.26526 0 8.64339 0 15.27Z"
+                                  fill="#7000FF"/>
+                            <path d="M13.9217 15.27C13.9217 21.8966 19.2984 27.2748 25.9232 27.2748V3.26526C19.2984 3.26526 13.9217 8.64339 13.9217 15.27Z"
+                                  fill="#7000FF"/>
+                            <path d="M45.4136 6.29053C47.8139 6.29053 50.5502 7.05883 52.2784 8.88355L49.8301 12.7731C48.822 11.8127 47.2858 11.0924 45.7976 11.0924C43.0613 11.0924 41.6691 13.1572 41.6691 15.2221C41.6691 17.2389 43.0613 19.4958 45.9897 19.4958C47.6699 19.4958 49.4461 18.4874 50.6942 17.4309L52.8065 21.4645C51.1263 23.1932 48.2939 24.2977 45.4136 24.2977C39.2688 24.2977 35.8124 20.024 35.8124 15.2701C35.8604 10.6603 39.2688 6.29053 45.4136 6.29053Z"
+                                  fill="black"/>
+                            <path d="M54.2467 0H60.0074V7.53898C60.0074 8.40333 59.9594 9.02757 59.9594 9.02757H60.0074C60.9675 7.34691 62.9837 6.29049 65.24 6.29049C68.6964 6.29049 71.4328 7.87512 71.4328 12.725V23.8654H65.6721V13.7815C65.6721 12.1968 65.048 11.5246 63.7518 11.5246C61.2555 11.5246 60.0074 13.4933 60.0074 16.1344V23.8654H54.2467V0V0Z"
+                                  fill="black"/>
+                            <path d="M83.0983 6.29053C88.523 6.29053 92.8915 9.93997 92.8915 15.3181C92.8915 20.6962 88.571 24.2496 83.1463 24.2496C77.7216 24.2496 73.4011 20.6962 73.4011 15.3181C73.4011 9.93997 77.7217 6.29053 83.0983 6.29053ZM83.1463 19.4477C85.2586 19.4477 87.0348 17.8631 87.0348 15.3181C87.0348 12.7251 85.2106 11.0924 83.1463 11.0924C81.0821 11.0924 79.2578 12.7251 79.2578 15.3181C79.2098 17.9111 81.0341 19.4477 83.1463 19.4477Z"
+                                  fill="black"/>
+                            <path d="M104.029 6.29053C109.453 6.29053 113.822 9.93997 113.822 15.3181C113.822 20.6962 109.501 24.2496 104.077 24.2496C98.6521 24.2496 94.3316 20.6962 94.3316 15.3181C94.3316 9.93997 98.6521 6.29053 104.029 6.29053ZM104.077 19.4477C106.189 19.4477 107.965 17.8631 107.965 15.3181C107.965 12.7251 106.141 11.0924 104.077 11.0924C102.013 11.0924 100.188 12.7251 100.188 15.3181C100.188 17.9111 101.965 19.4477 104.077 19.4477Z"
+                                  fill="black"/>
+                            <path d="M117.134 17.9591C118.383 19.0156 120.159 19.6878 121.791 19.6878C122.943 19.6878 123.375 19.3037 123.375 18.7755C123.375 16.9507 115.31 17.3349 115.31 11.7167C115.31 8.16327 118.479 6.29053 122.463 6.29053C124.671 6.29053 126.88 6.86676 128.608 8.25931L126.64 12.2449C125.631 11.4286 123.759 10.8523 122.319 10.8523C121.071 10.8523 120.735 11.2365 120.735 11.6687C120.735 13.4934 128.8 13.0612 128.8 18.6314C128.8 21.8487 126.112 24.2977 121.743 24.2977C119.295 24.2977 116.654 23.4813 114.734 21.7526L117.134 17.9591Z"
+                                  fill="black"/>
+                            <path d="M139.217 6.29053C144.306 6.29053 147.186 9.84393 147.186 14.5978C147.186 15.2221 147.138 15.7983 147.042 16.4225H136.193C136.625 18.5354 138.353 19.4958 140.177 19.4958C141.857 19.4958 143.538 18.6794 144.93 17.7671L147.09 21.8007C145.218 23.3853 142.386 24.2977 139.745 24.2977C133.6 24.2977 130.288 19.8799 130.288 15.2701C130.288 10.2281 133.696 6.29053 139.217 6.29053ZM141.473 13.1092C141.473 11.7167 140.561 10.5162 139.121 10.5162C137.441 10.5162 136.673 11.7167 136.337 13.1092H141.473V13.1092Z"
+                                  fill="black"/>
+                            <path d="M166.34 6.29053C168.741 6.29053 171.477 7.05883 173.205 8.88355L170.757 12.7731C169.749 11.8127 168.213 11.0924 166.725 11.0924C163.988 11.0924 162.596 13.1572 162.596 15.2221C162.596 17.2389 163.988 19.4958 166.917 19.4958C168.597 19.4958 170.373 18.4874 171.621 17.4309L173.733 21.4645C172.053 23.1932 169.221 24.2977 166.34 24.2977C160.196 24.2977 156.739 20.024 156.739 15.2701C156.787 10.6603 160.196 6.29053 166.34 6.29053Z"
+                                  fill="black"/>
+                            <path d="M183.863 6.29053C189.287 6.29053 193.656 9.93997 193.656 15.3181C193.656 20.6962 189.335 24.2496 183.911 24.2496C178.486 24.2496 174.165 20.6962 174.165 15.3181C174.117 9.93997 178.486 6.29053 183.863 6.29053ZM183.911 19.4958C186.023 19.4958 187.799 17.9111 187.799 15.3661C187.799 12.7731 185.975 11.1404 183.911 11.1404C181.798 11.1404 180.022 12.7731 180.022 15.3661C179.974 17.9111 181.798 19.4958 183.911 19.4958Z"
+                                  fill="black"/>
+                            <path d="M195.576 6.67468H201.337V16.7587C201.337 18.3433 201.961 19.0156 203.161 19.0156C205.609 19.0156 206.809 16.8547 206.809 14.2617V6.67468H212.57V23.8655H207.049V22.3769C207.049 21.8007 207.097 21.3205 207.097 21.3205H207.049C206.137 23.1452 203.977 24.2977 201.673 24.2977C198.264 24.2977 195.576 22.713 195.576 17.8631V6.67468V6.67468Z"
+                                  fill="black"/>
+                            <path d="M214.97 6.67463H220.491V9.55577C220.491 10.132 220.443 10.6122 220.443 10.6122H220.491C221.211 8.25926 223.42 6.3385 225.964 6.3385C226.204 6.3385 226.444 6.38652 226.636 6.38652V12.0528C226.444 12.0047 225.868 11.9567 225.484 11.9567C222.267 11.9567 220.731 13.9735 220.731 17.1428V23.8174H214.97V6.67463Z"
+                                  fill="black"/>
+                            <path d="M230.428 17.9591C231.677 19.0156 233.453 19.6878 235.085 19.6878C236.237 19.6878 236.669 19.3037 236.669 18.7755C236.669 16.9507 228.604 17.3349 228.604 11.7167C228.604 8.16327 231.773 6.29053 235.757 6.29053C237.965 6.29053 240.174 6.86676 241.902 8.25931L239.934 12.2449C238.925 11.4286 237.053 10.8523 235.613 10.8523C234.365 10.8523 234.029 11.2365 234.029 11.6687C234.029 13.4934 242.094 13.0612 242.094 18.6314C242.094 21.8487 239.406 24.2977 235.037 24.2977C232.589 24.2977 229.948 23.4813 228.028 21.7526L230.428 17.9591Z"
+                                  fill="black"/>
+                            <path d="M252.031 6.29053C257.12 6.29053 260 9.84393 260 14.5978C260 15.2221 259.952 15.7983 259.856 16.4225H249.007C249.439 18.5354 251.167 19.4958 252.991 19.4958C254.671 19.4958 256.352 18.6794 257.744 17.7671L259.904 21.8007C258.032 23.3853 255.199 24.2977 252.559 24.2977C246.414 24.2977 243.102 19.8799 243.102 15.2701C243.102 10.2281 246.51 6.29053 252.031 6.29053ZM254.287 13.1092C254.287 11.7167 253.375 10.5162 251.935 10.5162C250.255 10.5162 249.487 11.7167 249.151 13.1092H254.287V13.1092Z"
+                                  fill="black"/>
+                        </svg>
+                    </a>
+                    <div id="coursesBtn" class="coursesBtn">
+                        <svg id="burger" width="26" height="9" viewBox="0 0 26 9" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <line x1="1" y1="1" x2="25" y2="1" stroke="var(--burger-color)" stroke-width="2"
+                                  stroke-linecap="round"/>
+                            <line x1="1" y1="8" x2="25" y2="8" stroke="var(--burger-color)" stroke-width="2"
+                                  stroke-linecap="round"/>
+                        </svg>
+                        <svg id="x" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <line x1="1.51456" y1="1.51465" x2="18.4851" y2="18.4852" stroke="white" stroke-width="2"
+                                  stroke-linecap="round"/>
+                            <line x1="1.51465" y1="18.4852" x2="18.4852" y2="1.51464" stroke="white" stroke-width="2"
+                                  stroke-linecap="round"/>
+                        </svg>
+                        <p>Все направления курсов</p>
+                    </div>
+                </div>
+            </div>
+            <div class="feedback">
+                <div class="starBtn btn">
+                    <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.00281 2.55457L10.6073 6.33296L10.8427 6.88712L11.4425 6.93845L15.544 7.28938L12.4428 9.95698L11.9831 10.3524L12.1212 10.9428L13.0533 14.9287L9.51839 12.8107L9.00484 12.5031L8.49107 12.8104L4.94992 14.9287L5.88734 10.9441L6.02655 10.3524L5.56536 9.9564L2.45893 7.28913L6.55746 6.93845L7.15647 6.8872L7.39216 6.33413L9.00281 2.55457Z"
+                              stroke="white" stroke-width="2"/>
+                    </svg>
+                </div>
+                <a href="#">Отзывы о школах</a>
+            </div>
+        </div>
+    </header>
+    <div class="menu" id="menu">
+        <div class="content">
+            <ul class="menuList">
+                <li class="menuItem">
+                    <div class="titleMenu">
+                        <img class="drop" src="img/drop.svg" alt="drop">
+                        <a href="#" class="menuLink menuArrow">Аналитика</a>
+                    </div>
+                    <div class="ulBox">
+                        <ul id="subMenuAnalyticList" class="subMenuList subMenuList_active"></ul>
+                    </div>
+                </li>
+                <li class="menuItem">
+                    <div class="titleMenu">
+                        <img class="drop" src="img/drop.svg" alt="drop">
+                        <a href="#" class="menuLink menuArrow">Дизайн</a>
+                    </div>
+                    <div class="ulBox">
+                        <ul id="subMenuDesignList" class="subMenuList"></ul>
+                    </div>
+                </li>
+                <li class="menuItem">
+                    <div class="titleMenu">
+                        <img class="drop" src="img/drop.svg" alt="drop">
+                        <a href="#" class="menuLink menuArrow">Программирование</a>
+                    </div>
+                    <div class="ulBox">
+                        <ul id="subMenuProgramList" class="subMenuList"></ul>
+                    </div>
+
+                </li>
+                <li class="menuItem">
+                    <div class="titleMenu">
+                        <img class="drop" src="img/drop.svg" alt="drop">
+                        <a href="#" class="menuLink menuArrow">Иностранные языки</a>
+                    </div>
+                    <div class="ulBox">
+                        <ul id="subMenuForeignList" class="subMenuList"></ul>
+                    </div>
+
+                </li>
+                <li class="menuItem">
+                    <div class="titleMenu">
+                        <img class="drop" src="img/drop.svg" alt="drop">
+                        <a href="#" class="menuLink menuArrow">Маркетинг</a>
+                    </div>
+                    <div class="ulBox">
+                        <ul id="subMenuMarkList" class="subMenuList"></ul>
+                    </div>
+                </li>
+                <li class="menuItem">
+                    <div class="titleMenu">
+                        <img class="drop" src="img/drop.svg" alt="drop">
+                        <a href="#" class="menuLink menuArrow">Управление</a>
+                    </div>
+                    <div class="ulBox">
+                        <ul id="subMenuManageList" class="subMenuList"></ul>
+                    </div>
+                </li>
+                <li id="schoolFeedback" class="menuItem">
+                    <div class="titleMenu">
+                        <a class="menuLink menuArrow" href="#">Отзывы о школах</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <div class="headPresent" id="headPresent">
+            <div class="content">
+                <div class="wrapper">
+                    <div class="left">
+                        <h1>Сервис подбора и независимый рейтинг
+                            онлайн-курсов</h1>
+                        <p>Каталог обучающих курсов от ведущих онлайн школ и университетов</p>
+                        <button class="chooseCourseButton">Выбрать курс</button>
+                    </div>
+                    <img width="470px" height="562px" class="girlHead" src="assets/images/girl_head.png" alt="girl_head">
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="ourNumbers">
+                <div class="numbers">
+                    <div class="schools dig">
+                        <strong>40</strong>
+                        <span>школ</span>
+                    </div>
+                    <div class="courses dig">
+                        <strong>500</strong>
+                        <span>курсов</span>
+                    </div>
+                </div>
+                <div class="desc">
+                    <p class="desc_1">Выбирайте среди разных направлений, форматов, стоимости, проходите дистанционное
+                        обучение с
+                        пожизненным
+                        доступом к урокам. А также рейтинги бесплатных курсов и вебинаров.</p>
+                    <p>Учитесь у лучших преподавателей!</p>
+                </div>
+            </div>
+            <div class="coursesBlock">
+                <h2>Направления онлайн-курсов</h2>
+                <div class="cards" id="cardsBlock">
+                    <div class="card" id="analyticCard">
+                        <div class="title">
+                            <p>Аналитика</p>
+                            <img src="assets/images/2.png" alt="2">
+                        </div>
+                        <div class="list">
+                            <ul id="analyticList"></ul>
+                        </div>
+                        <div id="analyticDropDownBlock" class="dropDownBlock">
+                            <hr>
+                            <div class="expandBlock">
+                                <img class="dropCard" id="drop" src="assets/images/drop.svg" alt="drop">
+                                <a id="expand" class="expand">Развернуть все</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" id="designCard">
+                        <div class="title">
+                            <p>Дизайн</p>
+                            <img src="assets/images/6.png" alt="2">
+                        </div>
+                        <div class="list">
+                            <ul id="designList"></ul>
+                        </div>
+                        <div id="designDropDownBlock" class="dropDownBlock">
+                            <hr>
+                            <div class="expandBlock">
+                                <img class="dropCard" src="assets/images/drop.svg" alt="drop">
+                                <a id="expand2" class="expand">Развернуть все</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="foreignLangCard">
+                        <div class="title">
+                            <p>Иностранные языки</p>
+                            <img src="assets/images/5.png" alt="2">
+                        </div>
+                        <div class="list">
+                            <ul id="foreignList"></ul>
+                        </div>
+                        <div id="foreignDropDownBlock" class="dropDownBlock">
+                            <hr>
+                            <div class="expandBlock">
+                                <img class="dropCard" src="assets/images/drop.svg" alt="drop">
+                                <a class="expand">Развернуть все</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="marketingCard">
+                        <div class="title">
+                            <p>Маркетинг</p>
+                            <img src="assets/images/1.png" alt="2">
+                        </div>
+                        <div class="list">
+                            <ul id="marketingList"></ul>
+                        </div>
+                        <div id="marketingDropDownBlock" class="dropDownBlock">
+                            <hr>
+                            <div class="expandBlock">
+                                <img class="dropCard" src="assets/images/drop.svg" alt="drop">
+                                <a class="expand">Развернуть все</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="programCard">
+                        <div class="title">
+                            <p>Программирование</p>
+                            <img src="assets/images/4.png" alt="2">
+                        </div>
+                        <div class="list">
+                            <ul id="programList"></ul>
+                        </div>
+                        <div id="programDropDownBlock" class="dropDownBlock">
+                            <hr>
+                            <div class="expandBlock">
+                                <img class="dropCard" src="assets/images/drop.svg" alt="drop">
+                                <a class="expand">Развернуть все</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="manageCard">
+                        <div class="title">
+                            <p>Управление</p>
+                            <img src="assets/images/3.png" alt="2">
+                        </div>
+                        <div class="list">
+                            <ul id="manageList"></ul>
+                        </div>
+                        <div id="manageDropDownBlock" class="dropDownBlock">
+                            <hr>
+                            <div class="expandBlock">
+                                <img class="dropCard" src="assets/images/drop.svg" alt="drop">
+                                <a class="expand">Развернуть все</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feedbackBlock">
+            <div class='marquee'>
+                <div class="marqueeItems">
+                    <div class="feedbackCard">
+                        <div class="up">
+                            <p class="name">HR – Центр Онлайн</p>
+                            <img class="logoCentr" src="assets/images/hr-centr.png" alt="logo">
+                        </div>
+                        <div class="rating">
+                            <div class="rating-fill"></div>
+                        </div>
+                        <a class="feedNum show">12 отзывов о школе</a>
+                    </div>
+                    <div class="feedbackCard">
+                        <div class="up">
+                            <p class="name">HR – Центр Онлайн</p>
+                            <img class="logoCentr" src="assets/images/hr-centr.png" alt="logo">
+                        </div>
+                        <div class="rating">
+                            <div class="rating-fill"></div>
+                        </div>
+                        <a class="feedNum show">12 отзывов о школе</a>
+                    </div>
+                    <div class="feedbackCard">
+                        <div class="up">
+                            <p class="name">HR – Центр Онлайн</p>
+                            <img class="logoCentr" src="assets/images/hr-centr.png" alt="logo">
+                        </div>
+                        <div class="rating">
+                            <div class="rating-fill"></div>
+                        </div>
+                        <a class="feedNum show">12 отзывов о школе</a>
+                    </div>
+                    <div class="feedbackCard">
+                        <div class="up">
+                            <p class="name">HR – Центр Онлайн</p>
+                            <img class="logoCentr" src="assets/images/hr-centr.png" alt="logo">
+                        </div>
+                        <div class="rating">
+                            <div class="rating-fill"></div>
+                        </div>
+                        <a class="feedNum show">12 отзывов о школе</a>
+                    </div>
+                    <div class="feedbackCard">
+                        <div class="up">
+                            <p class="name">HR – Центр Онлайн</p>
+                            <img class="logoCentr" src="assets/images/hr-centr.png" alt="logo">
+                        </div>
+                        <div class="rating">
+                            <div class="rating-fill"></div>
+                        </div>
+                        <a class="feedNum show">12 отзывов о школе</a>
+                    </div>
+                    <div class="feedbackCard">
+                        <div class="up">
+                            <p class="name">HR – Центр Онлайн</p>
+                            <img class="logoCentr" src="assets/images/hr-centr.png" alt="logo">
+                        </div>
+                        <div class="rating">
+                            <div class="rating-fill"></div>
+                        </div>
+                        <a class="feedNum show">12 отзывов о школе</a>
+                    </div>
+                </div>
+                <div class="marqueeItems">
+                    <div class="feedbackCard">
+                        <div class="up">
+                            <p class="name">HR – Центр Онлайн</p>
+                            <img class="logoCentr" src="assets/images/hr-centr.png" alt="logo">
+                        </div>
+                        <div class="rating">
+                            <div class="rating-fill"></div>
+                        </div>
+                        <a class="feedNum show">12 отзывов о школе</a>
+                    </div>
+                    <div class="feedbackCard">
+                        <div class="up">
+                            <p class="name">HR – Центр Онлайн</p>
+                            <img class="logoCentr" src="assets/images/hr-centr.png" alt="logo">
+                        </div>
+                        <div class="rating">
+                            <div class="rating-fill"></div>
+                        </div>
+                        <a class="feedNum show">12 отзывов о школе</a>
+                    </div>
+                    <div class="feedbackCard">
+                        <div class="up">
+                            <p class="name">HR – Центр Онлайн</p>
+                            <img class="logoCentr" src="assets/images/hr-centr.png" alt="logo">
+                        </div>
+                        <div class="rating">
+                            <div class="rating-fill"></div>
+                        </div>
+                        <a class="feedNum show">12 отзывов о школе</a>
+                    </div>
+                    <div class="feedbackCard">
+                        <div class="up">
+                            <p class="name">HR – Центр Онлайн</p>
+                            <img class="logoCentr" src="assets/images/hr-centr.png" alt="logo">
+                        </div>
+                        <div class="rating">
+                            <div class="rating-fill"></div>
+                        </div>
+                        <a class="feedNum show">12 отзывов о школе</a>
+                    </div>
+                    <div class="feedbackCard">
+                        <div class="up">
+                            <p class="name">HR – Центр Онлайн</p>
+                            <img class="logoCentr" src="assets/images/hr-centr.png" alt="logo">
+                        </div>
+                        <div class="rating">
+                            <div class="rating-fill"></div>
+                        </div>
+                        <a class="feedNum show">12 отзывов о школе</a>
+                    </div>
+                    <div class="feedbackCard">
+                        <div class="up">
+                            <p class="name">HR – Центр Онлайн</p>
+                            <img class="logoCentr" src="assets/images/hr-centr.png" alt="logo">
+                        </div>
+                        <div class="rating">
+                            <div class="rating-fill"></div>
+                        </div>
+                        <a class="feedNum show">12 отзывов о школе</a>
+                    </div>
+                </div>
+                <div class="marqueeItems">
+                    <div class="feedbackCard">
+                        <div class="up">
+                            <p class="name">HR – Центр Онлайн</p>
+                            <img class="logoCentr" src="assets/images/hr-centr.png" alt="logo">
+                        </div>
+                        <div class="rating">
+                            <div class="rating-fill"></div>
+                        </div>
+                        <a class="feedNum show">12 отзывов о школе</a>
+                    </div>
+                    <div class="feedbackCard">
+                        <div class="up">
+                            <p class="name">HR – Центр Онлайн</p>
+                            <img class="logoCentr" src="assets/images/hr-centr.png" alt="logo">
+                        </div>
+                        <div class="rating">
+                            <div class="rating-fill"></div>
+                        </div>
+                        <a class="feedNum show">12 отзывов о школе</a>
+                    </div>
+                    <div class="feedbackCard">
+                        <div class="up">
+                            <p class="name">HR – Центр Онлайн</p>
+                            <img class="logoCentr" src="assets/images/hr-centr.png" alt="logo">
+                        </div>
+                        <div class="rating">
+                            <div class="rating-fill"></div>
+                        </div>
+                        <a class="feedNum show">12 отзывов о школе</a>
+                    </div>
+                    <div class="feedbackCard">
+                        <div class="up">
+                            <p class="name">HR – Центр Онлайн</p>
+                            <img class="logoCentr" src="assets/images/hr-centr.png" alt="logo">
+                        </div>
+                        <div class="rating">
+                            <div class="rating-fill"></div>
+                        </div>
+                        <a class="feedNum show">12 отзывов о школе</a>
+                    </div>
+                    <div class="feedbackCard">
+                        <div class="up">
+                            <p class="name">HR – Центр Онлайн</p>
+                            <img class="logoCentr" src="assets/images/hr-centr.png" alt="logo">
+                        </div>
+                        <div class="rating">
+                            <div class="rating-fill"></div>
+                        </div>
+                        <a class="feedNum show">12 отзывов о школе</a>
+                    </div>
+                    <div class="feedbackCard">
+                        <div class="up">
+                            <p class="name">HR – Центр Онлайн</p>
+                            <img class="logoCentr" src="assets/images/hr-centr.png" alt="logo">
+                        </div>
+                        <div class="rating">
+                            <div class="rating-fill"></div>
+                        </div>
+                        <a class="feedNum show">12 отзывов о школе</a>
+                    </div>
+                </div>
+            </div>
+            <button class="feedbackButton btn-violet">Отзывы о школах</button>
+        </div>
+
+        <div class="content">
+            <div class="edPlatforms">
+                <h2>Образовательные платформы</h2>
+                <div class="lists" id="educLists">
+                    <div class="container">
+                        <ul id="platforms" class="platforms"></ul>
+                    </div>
+                    <div class="expandBlock">
+                        <hr>
+                        <div class="line">
+                            <img class="dropCard" id="dropEdu" src="assets/images/drop.svg" alt="drop">
+                            <a id="expandEdu" class="expand">Развернуть все</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="content footer">
+            <div class="links">
+                <a href="addSchoolPage.html">Добавить школу</a>
+                <a href="aboutUsPage.html">О нас</a>
+                <a href="aboutUsPage.html">Контакты</a>
+                <a href="aboutRCKPage.html">РЦК</a>
+                <a href="privacyPolicyPage.html">Политика конфиденциальности</a>
+            </div>
+            <div class="socialMedia">
+                <div class="icon-vk">
+                    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M2.64437 0.59375H0.675168C0.112534 0.59375 0 0.858575 0 1.15051C0 1.67201 0.667608 4.25832 3.10848 7.67894C4.73574 10.0149 7.02837 11.2812 9.11463 11.2812C10.3664 11.2812 10.5212 11 10.5212 10.5156V8.74999C10.5212 8.18749 10.6398 8.07522 11.0361 8.07522C11.3282 8.07522 11.8289 8.22124 12.9972 9.34754C14.3324 10.6824 14.5525 11.2812 15.3035 11.2812H17.2727C17.8354 11.2812 18.1167 11 17.9544 10.445C17.7768 9.89181 17.1394 9.08918 16.2935 8.13782C15.8345 7.59552 15.146 7.01153 14.9374 6.71948C14.6453 6.34407 14.7288 6.17718 14.9374 5.8435C14.9374 5.8435 17.3366 2.46457 17.5869 1.31746C17.7121 0.900256 17.5869 0.59375 16.9914 0.59375H15.0222C14.5215 0.59375 14.2907 0.858575 14.1655 1.15051C14.1655 1.15051 13.1641 3.59086 11.7455 5.17604C11.2865 5.63487 11.0779 5.7809 10.8275 5.7809C10.7023 5.7809 10.5212 5.63487 10.5212 5.21778V1.31746C10.5212 0.816837 10.3759 0.59375 9.95855 0.59375H6.86407C6.55121 0.59375 6.36299 0.826062 6.36299 1.04628C6.36299 1.52081 7.07231 1.63027 7.14543 2.96514V5.86437C7.14543 6.5 7.03057 6.61525 6.78026 6.61525C6.11268 6.61525 4.4888 4.16399 3.52569 1.35914C3.33697 0.813969 3.14763 0.59375 2.64437 0.59375Z"
+                              fill="white"/>
+                    </svg>
+                </div>
+                <div class="icon-facebook">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 9C18 4.05 13.95 0 9 0C4.05 0 0 4.05 0 9C0 13.5 3.2625 17.2125 7.5375 17.8875V11.5875H5.2875V9H7.5375V6.975C7.5375 4.725 8.8875 3.4875 10.9125 3.4875C11.925 3.4875 12.9375 3.7125 12.9375 3.7125V5.9625H11.8125C10.6875 5.9625 10.35 6.6375 10.35 7.3125V9H12.825L12.375 11.5875H10.2375V18C14.7375 17.325 18 13.5 18 9Z"
+                              fill="white"/>
+                    </svg>
+                </div>
+                <div class="icon-ok">
+                    <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M9.46922 4.39303C9.46922 6.81312 7.47141 8.78602 5.02065 8.78602C2.5434 8.78602 0.545566 6.81312 0.545566 4.39303C0.545566 1.97292 2.5434 0 5.02065 0C7.47141 0 9.46922 1.97292 9.46922 4.39303ZM6.85872 4.39303C6.85872 3.39342 6.03291 2.57794 5.02065 2.57794C3.98184 2.57794 3.15602 3.39342 3.18271 4.39303C3.18271 5.39265 4.00852 6.20807 5.02065 6.20807C6.03291 6.20807 6.85872 5.39265 6.85872 4.39303Z"
+                              fill="white"/>
+                        <path d="M9.38929 11.3377C8.59016 11.8375 7.7111 12.1795 6.80547 12.39L9.33604 14.81C9.8421 15.3099 9.8421 16.1253 9.33604 16.6252C8.82997 17.1249 8.00416 17.1249 7.49809 16.6252L5.04734 14.205L2.59671 16.6252C2.33032 16.8619 2.01067 16.9934 1.66438 16.9934C1.3181 16.9934 0.998444 16.8882 0.732065 16.6252C0.225936 16.1253 0.225936 15.3099 0.732065 14.81L3.2094 12.3636C2.30368 12.1531 1.42464 11.8113 0.625512 11.3114C0.0128378 10.9432 -0.173624 10.154 0.172664 9.54895C0.572239 8.9439 1.37137 8.78614 1.98403 9.15437C3.7954 10.2855 6.1661 10.2855 7.97748 9.15437C8.59016 8.75979 9.41597 8.9439 9.78885 9.54895C10.1884 10.154 10.002 10.9694 9.38929 11.3377Z"
+                              fill="white"/>
+                    </svg>
+                </div>
+                <div class="icon-twitter">
+                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18 1.61538C17.325 1.93846 16.65 2.04615 15.8625 2.15385C16.65 1.72308 17.2125 1.07692 17.4375 0.215384C16.7625 0.646154 15.975 0.861539 15.075 1.07692C14.4 0.430769 13.3875 0 12.375 0C10.0125 0 8.2125 2.15385 8.775 4.30769C5.7375 4.2 3.0375 2.8 1.125 0.646154C0.1125 2.26154 0.675 4.30769 2.25 5.38462C1.6875 5.38462 1.125 5.16923 0.5625 4.95385C0.5625 6.56923 1.8 8.07692 3.4875 8.50769C2.925 8.61539 2.3625 8.72308 1.8 8.61539C2.25 10.0154 3.6 11.0923 5.2875 11.0923C3.9375 12.0615 1.9125 12.6 0 12.3846C1.6875 13.3538 3.6 14 5.625 14C12.4875 14 16.3125 8.50769 16.0875 3.44615C16.875 3.01538 17.55 2.36923 18 1.61538Z"
+                              fill="white"/>
+                    </svg>
+                </div>
+                <div class="icon-telegram">
+                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.23741 6.02697C6.06923 4.05126 9.29121 2.74875 10.9033 2.11944C15.5063 0.322639 16.4627 0.0105163 17.0861 9.9919e-05C17.2232 -0.00205699 17.5298 0.0298337 17.7284 0.181063C17.8961 0.308757 17.9422 0.481255 17.9643 0.602323C17.9864 0.723392 18.0139 0.999189 17.992 1.21469C17.7426 3.67437 16.6633 9.64338 16.1142 12.3983C15.8818 13.564 15.4244 13.9548 14.9815 13.9931C14.0189 14.0762 13.288 13.3961 12.3558 12.8226C10.897 11.9251 10.0729 11.3664 8.65691 10.4907C7.02048 9.47862 8.08131 8.92236 9.0139 8.01329C9.25797 7.77538 13.4988 4.15516 13.5809 3.82675C13.5912 3.78568 13.6007 3.63258 13.5038 3.55173C13.4069 3.47089 13.2639 3.49853 13.1606 3.52052C13.0143 3.55169 10.6839 4.9973 6.16938 7.85735C5.5079 8.28364 4.90875 8.49135 4.37193 8.48046C3.78013 8.46846 2.64175 8.16643 1.79548 7.90825C0.757494 7.59159 -0.0674757 7.42417 0.00436067 6.88638C0.0417775 6.60627 0.452793 6.3198 1.23741 6.02697Z"
+                              fill="white"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/mainPage.js"></script>
+</body>
+</html>

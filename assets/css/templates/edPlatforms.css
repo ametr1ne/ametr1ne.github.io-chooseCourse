@@ -1,0 +1,66 @@
+@charset "UTF-8";
+.edPlatforms {
+  display: flex;
+  flex-direction: column;
+  margin-top: 103px;
+  margin-bottom: 99px;
+}
+.edPlatforms .lists {
+  margin-top: 54px;
+}
+.edPlatforms .lists .container {
+  overflow: hidden;
+  max-height: 650px;
+  transition: max-height 0.3s;
+}
+.edPlatforms .lists .container .platforms {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 640px;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+}
+.edPlatforms .lists .container .platforms li {
+  font-size: 18px;
+  margin-bottom: 18px;
+  color: #BAC1D3;
+  list-style: none;
+}
+.edPlatforms .lists .container .platforms li > a {
+  transition: all 0.3s;
+}
+.edPlatforms .lists .container .platforms li::before {
+  position: relative;
+  top: -1px;
+  margin: auto 31px auto 0;
+  content: "•";
+}
+.edPlatforms .lists .container .platforms li:last-child {
+  margin-bottom: 0;
+}
+.edPlatforms .lists .expandBlock {
+  display: none;
+}
+.edPlatforms .lists .expandBlock hr {
+  margin: 25px 0 12px;
+  opacity: 0.15;
+}
+.edPlatforms .lists .expandBlock .line {
+  display: flex;
+  align-items: center;
+}
+.edPlatforms .lists .expandBlock .line .dropCard {
+  margin-right: 15px;
+  transform: rotate(0deg);
+}
+.edPlatforms .lists .expandBlock .line .expand {
+  line-height: 190%;
+}
+.edPlatforms .addListItemsEdu .expandBlock .line .dropCard {
+  transform: rotate(180deg);
+}
+
+/*# sourceMappingURL=edPlatforms.css.map */

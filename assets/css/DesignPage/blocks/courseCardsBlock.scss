@@ -1,0 +1,194 @@
+@import "../../variables";
+
+.course-details {
+  padding-top: 92px;
+  padding-bottom: 60px;
+  background: #F6F7FF;
+  position: relative;
+
+  &__title {
+    line-height: 176%;
+    font-size: 40px;
+    font-family: $museo-bold;
+    margin-bottom: 39px;
+  }
+
+  &__cards {
+    .cards-limiter {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 30px;
+
+      .card {
+        position: relative;
+        background: $white;
+        border-radius: 7px;
+        padding: 17px 20px 22px;
+        display: grid;
+        grid-template-rows: minmax(65px, auto) 48px auto min-content 1fr 60px;
+
+        &__title {
+          font-size: 23px;
+          line-height: 28px;
+          font-family: $museo-bold;
+          padding-bottom: 11px;
+          display: flex;
+
+          h4 {
+            margin: auto 0;
+          }
+
+          .card__rating {
+            height: 54px;
+            min-width: 54px;
+            width: 54px;
+            border-radius: 50%;
+            background: #169F00;
+            margin-left: auto;
+
+            .rating-num {
+              font-size: 23px;
+              font-family: $museo-bold;
+              color: $white;
+              display: flex;
+              height: 100%;
+              width: 100%;
+              justify-content: center;
+              align-items: center;
+            }
+
+            .rating__popup {
+              padding-top: 40px;
+              margin-left: -15px;
+              margin-top: -20px;
+
+              .popup-content {
+                min-width: 520px;
+              }
+            }
+          }
+
+          .open-popup {
+            .rating__popup {
+              z-index: 10;
+              visibility: visible;
+            }
+          }
+        }
+
+
+        &:nth-child(2n) {
+          .rating__popup {
+            right: 1%;
+            .popup-content {
+
+              &:before {
+                left: unset;
+                right: 32px;
+              }
+
+            }
+          }
+        }
+
+        .subtitle {
+          color: $grey;
+          font-size: 16px;
+          margin-bottom: 5px;
+        }
+
+        span {
+          font-size: 18px;
+          color: $black;
+        }
+
+        &__feedback-block {
+          display: flex;
+          justify-content: space-between;
+          padding-bottom: 7px;
+          border-bottom: 1px solid #DADADA;
+
+          .organization {
+            display: flex;
+            align-items: center;
+
+            .name {
+              font-size: 18px;
+              line-height: 220%;
+              color: $violet;
+              margin-right: 11px;
+            }
+
+            .rating {
+              margin-bottom: 0;
+            }
+          }
+
+          .feed-link {
+            line-height: 220%;
+          }
+        }
+
+        &__quick-info {
+          margin-top: 29px;
+          display: grid;
+          grid-gap: 27px;
+          grid-template-columns: 50% 50%;
+
+          .rate {
+            font-family: $museo-bold;
+          }
+        }
+
+        &__level {
+          padding-top: 26px;
+        }
+
+        &__advantages {
+          padding-top: 26px;
+          padding-bottom: 33px;
+        }
+
+        &__course-btn {
+          width: 100%;
+          height: 60px;
+          background: $violet;
+          border-radius: 7px;
+          color: $white;
+          margin-bottom: 0;
+          font-family: $museo-bold;
+        }
+
+      }
+    }
+  }
+
+  .expandBlock {
+    display: none;
+    margin-top: 21px;
+
+    hr {
+      opacity: 0.15;
+    }
+
+    .line {
+      display: flex;
+      align-items: center;
+
+      .expand-arrow {
+        margin-right: 15px;
+        transform: rotate(0deg);
+        transition: transform 0.3s;
+      }
+    }
+  }
+
+  .open-cards {
+    .expandBlock {
+      .expand-arrow {
+        transform: rotate(180deg);
+        transition: transform 0.3s;
+      }
+    }
+  }
+}

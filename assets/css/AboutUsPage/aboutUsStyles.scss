@@ -1,0 +1,91 @@
+@import "../templates/ourNumbersBlock";
+@import "../templates/headBlock";
+
+.head-present {
+  background: #F6F7FF;
+
+  .content {
+    .box {
+      .title {
+        max-width: unset;
+      }
+    }
+  }
+}
+
+h2 {
+  @media (max-width: $md) {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+.partners {
+  margin-top: 94px;
+  margin-bottom: 102px;
+
+  &__logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    .logos__item {
+      border: 1px solid #DFE3ED;
+      box-sizing: border-box;
+      border-radius: 7px;
+      height: 130px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__add-school {
+    margin: 0 auto;
+    max-width: 290px;
+    font-family: $museo-bold;
+  }
+}
+
+.our-team {
+  margin-bottom: 113px;
+
+  &__items {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 53px;
+  }
+
+  &__item {
+
+    .avatar {
+      width: 170px;
+      height: 170px;
+      border-radius: 7px;
+      margin-bottom: 18px;
+    }
+
+    .name {
+      font-family: $museo-bold;
+      font-size: 23px;
+      line-height: 140%;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 18px;
+    }
+
+    .post {
+      color: $grey;
+    }
+
+    .social-link {
+
+    }
+  }
+}

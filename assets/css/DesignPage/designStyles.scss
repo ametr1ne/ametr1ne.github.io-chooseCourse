@@ -1,0 +1,11 @@
+/*------------ Внутренние блоки ------------*/
+
+@import "blocks/coursesTableBlock";
+@import "blocks/courseCardsBlock";
+@import "blocks/coursesNavigationBlock";
+
+/*------------- Внешние блоки --------------*/
+
+@import "../templates/popup";
+@import "../templates/headBlock";
+@import "../templates/rating";

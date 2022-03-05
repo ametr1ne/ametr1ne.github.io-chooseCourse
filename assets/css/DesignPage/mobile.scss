@@ -1,0 +1,434 @@
+@import "../variables";
+
+.courses-table {
+  @media (max-width: $md) {
+    margin-top: 15px;
+
+    &__info {
+      justify-content: unset;
+      flex-direction: column-reverse;
+      margin-bottom: 40px;
+
+      .courses-table__sort {
+        align-items: unset;
+        flex-direction: column;
+
+        & > p {
+          margin-right: 0;
+          font-size: 14px;
+          margin-bottom: 9px;
+        }
+
+        .rating-btn {
+          width: 140px;
+          font-size: 14px;
+          margin-right: 12px;
+        }
+
+        .free-btn {
+          width: 140px;
+          font-size: 14px;
+        }
+      }
+
+      .courses-table__author {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        .author {
+          display: flex;
+          flex-direction: column;
+          margin-right: 38px;
+        }
+
+        .date {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      .grey-text {
+        line-height: 20px;
+        font-size: 14px;
+      }
+    }
+
+    &__table {
+      .row {
+        grid-template-columns: 25px 1fr 70px 1fr;
+      }
+
+      .table-title {
+        .rkc {
+          &__popup {
+            .popup-content {
+              max-width: none;
+              min-width: unset;
+              left: 15px;
+              right: 15px;
+
+              &::before {
+                left: 50%;
+              }
+            }
+          }
+        }
+      }
+
+      .courses-table__item {
+        padding-top: 15px;
+        padding-bottom: 21px;
+
+        .list-item {
+          display: grid;
+          grid-template-areas:
+                "sequence course rkc school"
+                "sequence course rkc school"
+                "sequence price rkc school"
+                "sequence credit credit credit"
+                "link link link link";
+
+          .sequence-item {
+            grid-area: sequence;
+          }
+
+          .name-item {
+            grid-area: course;
+            font-size: 16px;
+            margin-bottom: 0;
+          }
+
+          .courlink-item {
+            grid-area: link;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 45px;
+            border: 1px solid rgba(112, 0, 255, 0.3);
+            color: $violet;
+            border-radius: 7px;
+            transition: all 0.3s;
+
+            &:hover {
+              cursor: pointer;
+              background-color: $purple;
+              color: $white;
+              transition: all 0.3s;
+            }
+          }
+
+          .rkc-item {
+            grid-area: rkc;
+            font-size: 16px;
+          }
+
+          .school-item {
+            grid-area: school;
+            padding-right: 0;
+
+            &__name {
+              font-size: 16px;
+              line-height: 22px;
+              margin-bottom: 3px;
+            }
+
+            &__rating {
+              margin-bottom: 12px;
+            }
+
+            &__feedbacks {
+              font-size: 14px;
+            }
+          }
+
+          .price-item, .credit-item {
+            font-size: 16px;
+            color: $grey;
+          }
+
+          .price-item {
+            grid-area: price;
+            padding-top: 10px;
+          }
+
+          .credit-item {
+            grid-area: credit;
+            padding-bottom: 15px;
+          }
+
+          .duration-item {
+            display: none;
+          }
+
+          .link-item {
+            display: none;
+          }
+        }
+      }
+
+      .table-title {
+        margin-bottom: 16px;
+
+        div {
+          font-size: 14px;
+        }
+
+        .price, .credit, .duration, .link {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 340px) {
+    &__table {
+      .row {
+        grid-template-columns: 15px 85px 58px minmax(50px, 1fr);
+
+        .sequence, .sequence-item {
+          margin-right: 13px;
+        }
+
+        .rkc, .rkc-item {
+          margin-right: 23px;
+        }
+      }
+    }
+  }
+}
+
+.courses-nav {
+  @media (max-width: $md) {
+    padding-bottom: 60px;
+    padding-top: 60px;
+
+    &__title {
+      display: none;
+    }
+
+    &__cards {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+    }
+  }
+
+  @media (max-width: $sm) {
+    &__cards {
+      grid-template-columns: 1fr;
+
+      .card {
+        &__name {
+          font-size: 19px;
+          line-height: 23px;
+          margin-bottom: 17px;
+        }
+
+        .list-limiter {
+          max-height: 149px;
+          transition: max-height 0.3s;
+          .list {
+            li {
+              margin-bottom: 10px;
+
+              a {
+                font-size: 16px;
+                line-height: 140%;
+              }
+            }
+          }
+        }
+        .expandBlock {
+          .line {
+            .expand-name {
+              font-size: 16px;
+              line-height: 140%;
+            }
+          }
+        }
+      }
+      .open-cards {
+        .list-limiter {
+          max-height: 1925px;
+          transition: max-height 0.3s;
+        }
+      }
+
+    }
+  }
+}
+
+.course-details {
+  @media (max-width: $md) {
+    padding-top: 12px;
+    padding-bottom: 14px;
+
+    &__title {
+      margin-bottom: 17px;
+    }
+
+    &__cards {
+      overflow: hidden;
+
+      .cards-limiter {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+        grid-row-gap: 20px;
+        max-height: 1px;
+        transition: max-height 0.3s;
+
+        .card {
+          &__title {
+
+            .card__rating {
+
+              .rating__popup {
+                right: unset;
+                left: 0;
+                margin-right: 15px;
+                margin-left: 15px;
+
+                .popup-content {
+                  max-width: none;
+                  min-width: unset;
+
+                  &:before {
+                    left: unset;
+                    right: 25px;
+                  }
+                }
+              }
+
+              &:nth-child(2n) {
+                .rating__popup {
+                  .popup-content {
+                    right: unset;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .expandBlock {
+      display: block;
+    }
+
+    .open-cards {
+      .cards-limiter {
+        max-height: 3000px;
+        transition: max-height 0.3s;
+      }
+    }
+  }
+
+  @media (max-width: $sm) {
+    &__title {
+      font-size: 25px;
+      line-height: 176%;
+    }
+
+    &__cards {
+      .cards-limiter {
+        .card {
+          padding: 20px 20px 21px;
+          grid-template-rows: auto min-content auto min-content 1fr 60px;
+
+          .subtitle {
+            font-size: 14px;
+
+            span {
+              font-size: 16px;
+            }
+          }
+
+          &__title {
+            font-size: 19px;
+            line-height: 23px;
+            padding-bottom: 8px;
+
+            .card__rating {
+              height: 48px;
+              width: 48px;
+              min-width: 48px;
+              font-size: 19px;
+
+              .rating__popup {
+                min-width: unset;
+
+                &:before {
+                  right: 22px;
+                }
+              }
+            }
+          }
+
+          &__feedback-block {
+            display: flex;
+            flex-direction: column;
+            justify-content: unset;
+            padding-bottom: 9px;
+            border-bottom: 1px solid #DADADA;
+
+            .organization {
+              display: flex;
+              align-items: center;
+
+              .name {
+                font-size: 16px;
+                line-height: 21px;
+                margin-right: 8px;
+              }
+
+              .rating {
+                font-size: 16px;
+              }
+            }
+
+            .feed-link {
+              font-size: 16px;
+              line-height: 35px;
+            }
+          }
+
+          &__quick-info {
+            margin-top: 12px;
+            grid-gap: 11px;
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(4, min-content);
+          }
+
+          &__level {
+            padding-top: 11px;
+          }
+
+          &__advantages {
+            padding-top: 11px;
+            padding-bottom: 25px;
+          }
+
+          &__course-btn {
+            width: 100%;
+            height: 60px;
+            background: $violet;
+            border-radius: 7px;
+            color: $white;
+            margin-bottom: 0;
+            font-family: $museo-bold;
+          }
+        }
+      }
+    }
+
+    .expandBlock {
+      .line {
+        .expand-name {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

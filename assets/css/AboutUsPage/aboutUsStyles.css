@@ -1,0 +1,200 @@
+.ourNumbers {
+  padding-top: 87px;
+  display: flex;
+  flex-direction: row;
+}
+.ourNumbers .numbers {
+  display: flex;
+}
+.ourNumbers .schools {
+  display: flex;
+  flex-direction: column;
+  margin-right: 125px;
+}
+.ourNumbers .schools span {
+  margin-left: 5px;
+}
+.ourNumbers .courses {
+  display: flex;
+  flex-direction: column;
+  margin-right: 92px;
+}
+.ourNumbers .courses span {
+  margin-left: 5px;
+}
+.ourNumbers p {
+  line-height: 140%;
+}
+.ourNumbers .desc {
+  font-weight: normal;
+  font-size: 23px;
+  color: #000000;
+  padding-top: 23px;
+}
+.ourNumbers .desc .desc_1 {
+  padding-bottom: 30px;
+}
+.ourNumbers strong {
+  font-family: "Museo Sans Cyrl 500", serif;
+  font-size: 60px;
+  color: #000000;
+}
+@media (max-width: 1024px) {
+  .ourNumbers {
+    padding-top: 40px;
+    flex-direction: column;
+  }
+  .ourNumbers .schools {
+    margin-right: 78px;
+  }
+  .ourNumbers .courses {
+    margin-right: 0;
+  }
+  .ourNumbers .dig {
+    flex-direction: row;
+  }
+  .ourNumbers .dig span {
+    margin-left: 5px;
+    padding-top: 13px;
+  }
+  .ourNumbers .desc {
+    font-size: 16px;
+  }
+  .ourNumbers .desc .desc_1 {
+    padding-bottom: 15px;
+  }
+  .ourNumbers strong {
+    font-size: 30px;
+  }
+}
+.head-present {
+  width: 100%;
+  padding-top: 109px;
+  background: #FCF1FF;
+}
+.head-present .box {
+  display: grid;
+  grid-template-areas: "navigation headimage" "title headimage";
+  grid-template-columns: 1fr;
+}
+.head-present .navigation {
+  font-size: 18px;
+  margin-top: 60px;
+  grid-area: navigation;
+}
+.head-present .navigation span {
+  color: #A3AABC;
+}
+.head-present .title {
+  grid-area: title;
+  max-width: 874px;
+  margin-top: 43px;
+  font-family: "Museo Sans Cyrl 500", serif;
+  font-size: 60px;
+  margin-bottom: 44px;
+}
+.head-present .head-image {
+  margin-top: 60px;
+  grid-area: headimage;
+}
+.head-present .head-image__image {
+  width: 170px;
+  height: 170px;
+}
+@media (max-width: 1024px) {
+  .head-present {
+    padding-top: 58px;
+  }
+  .head-present .box {
+    grid-template-areas: "navigation" "headimage" "title";
+  }
+  .head-present .navigation {
+    font-size: 16px;
+    margin-top: 24px;
+  }
+  .head-present .title {
+    max-width: 400px;
+    margin-top: 16px;
+    font-size: 30px;
+    margin-bottom: 22px;
+  }
+  .head-present .head-image {
+    margin-top: 26px;
+  }
+  .head-present .head-image__image {
+    margin-top: 0;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.head-present {
+  background: #F6F7FF;
+}
+.head-present .content .box .title {
+  max-width: unset;
+}
+
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+.partners {
+  margin-top: 94px;
+  margin-bottom: 102px;
+}
+.partners__logos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.partners__logos .logos__item {
+  border: 1px solid #DFE3ED;
+  box-sizing: border-box;
+  border-radius: 7px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partners__add-school {
+  margin: 0 auto;
+  max-width: 290px;
+  font-family: "Museo Sans Cyrl 500";
+}
+
+.our-team {
+  margin-bottom: 113px;
+}
+.our-team__items {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 53px;
+}
+.our-team__item .avatar {
+  width: 170px;
+  height: 170px;
+  border-radius: 7px;
+  margin-bottom: 18px;
+}
+.our-team__item .name {
+  font-family: "Museo Sans Cyrl 500";
+  font-size: 23px;
+  line-height: 140%;
+  margin-bottom: 20px;
+}
+.our-team__item p {
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+.our-team__item .post {
+  color: #A3AABC;
+}
+
+/*# sourceMappingURL=aboutUsStyles.css.map */

@@ -1,0 +1,319 @@
+@media (max-width: 1024px) {
+  .courses-table {
+    margin-top: 15px;
+  }
+  .courses-table__info {
+    justify-content: unset;
+    flex-direction: column-reverse;
+    margin-bottom: 40px;
+  }
+  .courses-table__info .courses-table__sort {
+    align-items: unset;
+    flex-direction: column;
+  }
+  .courses-table__info .courses-table__sort > p {
+    margin-right: 0;
+    font-size: 14px;
+    margin-bottom: 9px;
+  }
+  .courses-table__info .courses-table__sort .rating-btn {
+    width: 140px;
+    font-size: 14px;
+    margin-right: 12px;
+  }
+  .courses-table__info .courses-table__sort .free-btn {
+    width: 140px;
+    font-size: 14px;
+  }
+  .courses-table__info .courses-table__author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .courses-table__info .courses-table__author .author {
+    display: flex;
+    flex-direction: column;
+    margin-right: 38px;
+  }
+  .courses-table__info .courses-table__author .date {
+    display: flex;
+    flex-direction: column;
+  }
+  .courses-table__info .grey-text {
+    line-height: 20px;
+    font-size: 14px;
+  }
+  .courses-table__table .row {
+    grid-template-columns: 25px 1fr 70px 1fr;
+  }
+  .courses-table__table .table-title .rkc__popup .popup-content {
+    max-width: none;
+    min-width: unset;
+    left: 15px;
+    right: 15px;
+  }
+  .courses-table__table .table-title .rkc__popup .popup-content::before {
+    left: 50%;
+  }
+  .courses-table__table .courses-table__item {
+    padding-top: 15px;
+    padding-bottom: 21px;
+  }
+  .courses-table__table .courses-table__item .list-item {
+    display: grid;
+    grid-template-areas: "sequence course rkc school" "sequence course rkc school" "sequence price rkc school" "sequence credit credit credit" "link link link link";
+  }
+  .courses-table__table .courses-table__item .list-item .sequence-item {
+    grid-area: sequence;
+  }
+  .courses-table__table .courses-table__item .list-item .name-item {
+    grid-area: course;
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  .courses-table__table .courses-table__item .list-item .courlink-item {
+    grid-area: link;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 45px;
+    border: 1px solid rgba(112, 0, 255, 0.3);
+    color: #7000FF;
+    border-radius: 7px;
+    transition: all 0.3s;
+  }
+  .courses-table__table .courses-table__item .list-item .courlink-item:hover {
+    cursor: pointer;
+    background-color: #E8007D;
+    color: #ffffff;
+    transition: all 0.3s;
+  }
+  .courses-table__table .courses-table__item .list-item .rkc-item {
+    grid-area: rkc;
+    font-size: 16px;
+  }
+  .courses-table__table .courses-table__item .list-item .school-item {
+    grid-area: school;
+    padding-right: 0;
+  }
+  .courses-table__table .courses-table__item .list-item .school-item__name {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 3px;
+  }
+  .courses-table__table .courses-table__item .list-item .school-item__rating {
+    margin-bottom: 12px;
+  }
+  .courses-table__table .courses-table__item .list-item .school-item__feedbacks {
+    font-size: 14px;
+  }
+  .courses-table__table .courses-table__item .list-item .price-item, .courses-table__table .courses-table__item .list-item .credit-item {
+    font-size: 16px;
+    color: #A3AABC;
+  }
+  .courses-table__table .courses-table__item .list-item .price-item {
+    grid-area: price;
+    padding-top: 10px;
+  }
+  .courses-table__table .courses-table__item .list-item .credit-item {
+    grid-area: credit;
+    padding-bottom: 15px;
+  }
+  .courses-table__table .courses-table__item .list-item .duration-item {
+    display: none;
+  }
+  .courses-table__table .courses-table__item .list-item .link-item {
+    display: none;
+  }
+  .courses-table__table .table-title {
+    margin-bottom: 16px;
+  }
+  .courses-table__table .table-title div {
+    font-size: 14px;
+  }
+  .courses-table__table .table-title .price, .courses-table__table .table-title .credit, .courses-table__table .table-title .duration, .courses-table__table .table-title .link {
+    display: none;
+  }
+}
+@media (max-width: 340px) {
+  .courses-table__table .row {
+    grid-template-columns: 15px 85px 58px minmax(50px, 1fr);
+  }
+  .courses-table__table .row .sequence, .courses-table__table .row .sequence-item {
+    margin-right: 13px;
+  }
+  .courses-table__table .row .rkc, .courses-table__table .row .rkc-item {
+    margin-right: 23px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .courses-nav {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+  .courses-nav__title {
+    display: none;
+  }
+  .courses-nav__cards {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .courses-nav__cards {
+    grid-template-columns: 1fr;
+  }
+  .courses-nav__cards .card__name {
+    font-size: 19px;
+    line-height: 23px;
+    margin-bottom: 17px;
+  }
+  .courses-nav__cards .card .list-limiter {
+    max-height: 149px;
+    transition: max-height 0.3s;
+  }
+  .courses-nav__cards .card .list-limiter .list li {
+    margin-bottom: 10px;
+  }
+  .courses-nav__cards .card .list-limiter .list li a {
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .courses-nav__cards .card .expandBlock .line .expand-name {
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .courses-nav__cards .open-cards .list-limiter {
+    max-height: 1925px;
+    transition: max-height 0.3s;
+  }
+}
+
+@media (max-width: 1024px) {
+  .course-details {
+    padding-top: 12px;
+    padding-bottom: 14px;
+  }
+  .course-details__title {
+    margin-bottom: 17px;
+  }
+  .course-details__cards {
+    overflow: hidden;
+  }
+  .course-details__cards .cards-limiter {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    grid-row-gap: 20px;
+    max-height: 1px;
+    transition: max-height 0.3s;
+  }
+  .course-details__cards .cards-limiter .card__title .card__rating .rating__popup {
+    right: unset;
+    left: 0;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .course-details__cards .cards-limiter .card__title .card__rating .rating__popup .popup-content {
+    max-width: none;
+    min-width: unset;
+  }
+  .course-details__cards .cards-limiter .card__title .card__rating .rating__popup .popup-content:before {
+    left: unset;
+    right: 25px;
+  }
+  .course-details__cards .cards-limiter .card__title .card__rating:nth-child(2n) .rating__popup .popup-content {
+    right: unset;
+  }
+  .course-details .expandBlock {
+    display: block;
+  }
+  .course-details .open-cards .cards-limiter {
+    max-height: 3000px;
+    transition: max-height 0.3s;
+  }
+}
+@media (max-width: 768px) {
+  .course-details__title {
+    font-size: 25px;
+    line-height: 176%;
+  }
+  .course-details__cards .cards-limiter .card {
+    padding: 20px 20px 21px;
+    grid-template-rows: auto min-content auto min-content 1fr 60px;
+  }
+  .course-details__cards .cards-limiter .card .subtitle {
+    font-size: 14px;
+  }
+  .course-details__cards .cards-limiter .card .subtitle span {
+    font-size: 16px;
+  }
+  .course-details__cards .cards-limiter .card__title {
+    font-size: 19px;
+    line-height: 23px;
+    padding-bottom: 8px;
+  }
+  .course-details__cards .cards-limiter .card__title .card__rating {
+    height: 48px;
+    width: 48px;
+    min-width: 48px;
+    font-size: 19px;
+  }
+  .course-details__cards .cards-limiter .card__title .card__rating .rating__popup {
+    min-width: unset;
+  }
+  .course-details__cards .cards-limiter .card__title .card__rating .rating__popup:before {
+    right: 22px;
+  }
+  .course-details__cards .cards-limiter .card__feedback-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: unset;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #DADADA;
+  }
+  .course-details__cards .cards-limiter .card__feedback-block .organization {
+    display: flex;
+    align-items: center;
+  }
+  .course-details__cards .cards-limiter .card__feedback-block .organization .name {
+    font-size: 16px;
+    line-height: 21px;
+    margin-right: 8px;
+  }
+  .course-details__cards .cards-limiter .card__feedback-block .organization .rating {
+    font-size: 16px;
+  }
+  .course-details__cards .cards-limiter .card__feedback-block .feed-link {
+    font-size: 16px;
+    line-height: 35px;
+  }
+  .course-details__cards .cards-limiter .card__quick-info {
+    margin-top: 12px;
+    grid-gap: 11px;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, min-content);
+  }
+  .course-details__cards .cards-limiter .card__level {
+    padding-top: 11px;
+  }
+  .course-details__cards .cards-limiter .card__advantages {
+    padding-top: 11px;
+    padding-bottom: 25px;
+  }
+  .course-details__cards .cards-limiter .card__course-btn {
+    width: 100%;
+    height: 60px;
+    background: #7000FF;
+    border-radius: 7px;
+    color: #ffffff;
+    margin-bottom: 0;
+    font-family: "Museo Sans Cyrl 500";
+  }
+  .course-details .expandBlock .line .expand-name {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=mobile.css.map */

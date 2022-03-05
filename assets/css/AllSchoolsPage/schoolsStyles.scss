@@ -1,0 +1,31 @@
+@import "blocks/cardsBlock";
+@import "../templates/edPlatforms";
+
+@import "../templates/headBlock";
+@import "../templates/rating";
+
+.head-present {
+  background: $white;
+
+  .content {
+    .box {
+      .title {
+        max-width: unset;
+      }
+    }
+  }
+}
+
+.edPlatforms {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 102px;
+  padding-bottom: 115px;
+
+  @media (max-width: $md) {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+}
+
+

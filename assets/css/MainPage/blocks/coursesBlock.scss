@@ -1,0 +1,142 @@
+@import "../../variables";
+
+.coursesBlock {
+  margin: 96px 0 90px;
+
+  .cards {
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 50px;
+    align-items: flex-start;
+    width: 100%;
+
+    #analyticCard {
+      background: $var5;
+    }
+
+    #designCard {
+      background: $var6;
+    }
+
+    #foreignLangCard {
+      background: $var7;
+    }
+
+    #marketingCard {
+      background: $var8;
+    }
+
+    #programCard {
+      background: $var9;
+    }
+
+    #manageCard {
+      background: $var10;
+    }
+
+    .card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      margin: 0 2% 30px 0;
+      width: 32%;
+      min-height: 455px;
+      border-radius: 7px;
+      padding: 30px 30px 16px;
+      transition: 0.3s;
+      box-sizing: border-box;
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+
+      .title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 23px;
+        font-family: 'Museo Sans Cyrl 500', serif;
+        line-height: 28px;
+
+        img {
+          top: 20px;
+          right: 20px;
+          position: absolute;
+          height: 50px;
+          width: 50px;
+        }
+
+        p {
+          margin: auto 0;
+          font-family: 'Museo Sans Cyrl 500', serif;
+          font-size: 23px;
+          line-height: 28px;
+        }
+      }
+
+      .list {
+        margin-top: 28px;
+        max-height: 273px;
+        overflow: hidden;
+        transition: max-height 0.3s;
+
+        ul {
+          li .expand {
+            display: list-item;
+            margin-top: 15px;
+            cursor: pointer;
+          }
+
+          li {
+            margin-bottom: 20px;
+            list-style: none;
+            font-weight: normal;
+            font-size: 18px;
+            color: $black;
+
+            &:last-child {
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+
+      .dropDownBlock {
+        width: 100%;
+
+        hr {
+          margin: 36px 0 0;
+          opacity: 0.15;
+        }
+
+        .expandBlock {
+          display: flex;
+          flex-direction: row;
+          padding-top: 12px;
+
+          .dropCard {
+            transform: rotate(0deg);
+            transition: transform 0.3s;
+            margin-right: 11px;
+          }
+        }
+      }
+    }
+
+    .add {
+      .list {
+        max-height: 10000px;
+        transition: max-height 0.3s;
+      }
+
+      .dropDownBlock {
+        .expandBlock {
+          .dropCard {
+            transform: rotate(180deg);
+            transition: transform 0.3s;
+          }
+        }
+      }
+    }
+  }
+}

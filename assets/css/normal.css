@@ -1,0 +1,522 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Museo Sans Cyrl 300", serif;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  --burger-color: #000;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+.stopScroll {
+  overflow: hidden;
+}
+
+h2 {
+  font-family: "Museo Sans Cyrl 500", serif;
+  font-size: 40px;
+  color: #000000;
+}
+
+a, p, strong, span, h1, h2, h3, h4, h5, h6, ul, li, menu {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#wrapper .dark {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: -1;
+}
+#wrapper .background {
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 130;
+}
+
+.content {
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0 15px;
+}
+
+a {
+  font-weight: normal;
+  font-size: 18px;
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+a:hover {
+  transition: color 0.3s;
+  cursor: pointer;
+  color: #7000FF;
+}
+@media (max-width: 1024px) {
+  a {
+    font-size: 16px;
+  }
+}
+
+button {
+  border: none;
+  font-size: 18px;
+  font-family: inherit;
+  transition: all 0.3s;
+  border-radius: 7px;
+}
+button:hover {
+  cursor: pointer;
+  background: #E8007D !important;
+  color: #ffffff !important;
+  transition: background 0.3s;
+}
+@media (max-width: 1024px) {
+  button {
+    font-size: 16px;
+  }
+}
+
+.btn-violet {
+  border: none;
+  height: 60px;
+  background: #7000FF !important;
+  border-radius: 7px;
+  color: #ffffff !important;
+  width: 100%;
+  display: flex;
+  font-family: "Museo Sans Cyrl 300", serif;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s;
+}
+.btn-violet:hover {
+  background: #E8007D !important;
+  color: #ffffff !important;
+  transition: background 0.3s;
+}
+
+.btn-white {
+  border: 1px solid rgba(112, 0, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  font-family: "Museo Sans Cyrl 300", serif;
+  color: #7000FF;
+  border-radius: 7px;
+  transition: background 0.3s;
+}
+.btn-white:hover {
+  background: #E8007D !important;
+  color: #ffffff !important;
+  transition: background 0.3s;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 109px;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-bottom: 1px solid #E3E3E3;
+  z-index: 1000;
+}
+header .header {
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: unset;
+  padding: 0 60px 0 50px;
+}
+header .header .left {
+  display: flex;
+  margin: auto 0;
+}
+header .header .left .logoAndButton {
+  display: flex;
+  flex-direction: row;
+}
+header .header .left .logoAndButton .logo {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+header .header .left .logoAndButton .logo svg {
+  float: left;
+}
+header .header .left .coursesBtn {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 71px;
+  width: 305px;
+  height: 55px;
+  cursor: pointer;
+  box-shadow: 0 5px 30px rgba(41, 8, 13, 0.15);
+  border-radius: 7px;
+  font-size: 18px;
+  color: #000000;
+  transition: all 0.3s;
+}
+header .header .left .coursesBtn svg {
+  position: absolute;
+  left: 23px;
+}
+header .header .left .coursesBtn svg line {
+  transition: all 0.3s;
+}
+header .header .left .coursesBtn p {
+  left: 43px;
+  position: absolute;
+  margin-left: 19px;
+}
+header .header .left .coursesBtn #burger {
+  visibility: visible;
+  transform: rotate(-180deg) translateZ(1px);
+  transition: all 0.3s;
+}
+header .header .left .coursesBtn #x {
+  opacity: 0;
+  left: 25px;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+header .header .left .coursesBtn:hover {
+  color: #ffffff;
+  background-color: #E8007D;
+  --burger-color: #fff;
+  transition: all 0.3s;
+}
+header .header .left .coursesBtn:hover line {
+  transition: all 0.3s;
+}
+header .header .feedback {
+  display: flex;
+  flex-direction: row;
+}
+header .header .feedback .starBtn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  border: none;
+  margin: auto 13px auto 0;
+  background-color: #7000FF;
+  transition: background-color 0.3s;
+}
+header .header .feedback .starBtn:hover {
+  background-color: #E8007D;
+  transition: background-color 0.3s;
+}
+header .header .feedback a {
+  margin: auto 0;
+}
+
+.menu {
+  visibility: hidden;
+  position: fixed;
+  padding: 109px 0 0;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  width: 100%;
+  z-index: 200;
+  min-height: 772px;
+  background-color: #ffffff;
+}
+.menu #schoolFeedback {
+  margin-left: 23px;
+  display: none;
+}
+.menu .menuList {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin: 50px auto 0;
+  float: left;
+  width: 271px;
+}
+.menu .menuList .menuItem {
+  position: static;
+  list-style: none;
+  margin-bottom: 20px;
+  overflow: auto;
+}
+.menu .menuList .menuItem .titleMenu {
+  display: flex;
+}
+.menu .menuList .menuItem .titleMenu .drop {
+  display: none;
+  margin-right: 14px;
+}
+.menu .menuList .menuItem .titleMenu .menuLink {
+  font-family: "Museo Sans Cyrl 500", serif;
+  font-size: 23px;
+}
+.menu .menuList .menuItem .subMenuList {
+  visibility: hidden;
+  position: absolute;
+  min-height: 300px;
+  left: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 600px;
+}
+.menu .menuList .menuItem .subMenuList li {
+  list-style: none;
+  margin-bottom: 20px;
+  width: 270px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu .menuList .menuItem .subMenuList a {
+  font-size: 18px;
+}
+@media (max-width: 1024px) {
+  .menu {
+    padding-top: 58px;
+    min-height: unset;
+    height: 100%;
+  }
+  .menu #schoolFeedback {
+    display: block;
+  }
+  .menu .menuList {
+    position: static;
+    margin: 31px 0 0;
+    float: unset;
+    width: 100%;
+  }
+  .menu .menuList .menuItem {
+    overflow: hidden;
+  }
+  .menu .menuList .menuItem .titleMenu .drop {
+    display: block;
+    transition: transform 0.3s;
+  }
+  .menu .menuList .menuItem .titleMenu .menuLink {
+    font-size: 19px;
+  }
+  .menu .menuList .menuItem .ulBox {
+    max-height: 0;
+    margin-left: 25px;
+    transition: max-height 0.3s;
+  }
+  .menu .menuList .menuItem .ulBox .subMenuList {
+    visibility: visible;
+    position: static;
+    min-height: unset;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-height: unset;
+    margin-left: 0;
+  }
+  .menu .menuList .menuItem .ulBox .subMenuList li {
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 23px;
+    flex-wrap: unset;
+  }
+  .menu .menuList .menuItem .ulBox .subMenuList li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .menu .menuList {
+    margin-top: 31px;
+  }
+}
+
+.active .header .left .coursesBtn {
+  background-color: #7000FF;
+  box-shadow: none;
+  color: #ffffff;
+}
+.active .header .left .coursesBtn #burger {
+  opacity: 0;
+  visibility: hidden;
+  transform: rotate(180deg);
+}
+.active .header .left .coursesBtn #x {
+  opacity: 1;
+  visibility: visible;
+  transform: rotate(180deg);
+}
+.active .menu {
+  visibility: visible;
+}
+@media (min-width: 1024px) {
+  .active .menu .menuList .menuItem .subMenuList_active {
+    display: flex;
+    visibility: visible;
+  }
+}
+.active .menu .menuList .openDropDown {
+  max-height: min-content;
+  transition: max-height 0.3s;
+}
+.active .menu .menuList .openDropDown .titleMenu .drop {
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+}
+.active .menu .menuList .openDropDown .ulBox {
+  max-height: 1800px;
+  transition: max-height 0.3s;
+}
+@media (min-width: 1024px) {
+  .active .menu .menuList .openDropDown .ulBox .subMenuList {
+    visibility: visible;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 120px;
+  background: #F7F7FF;
+}
+footer .footer {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer .links {
+  display: flex;
+  flex-direction: row;
+}
+footer .footer .links a {
+  margin-right: 30px;
+}
+footer .footer .socialMedia {
+  display: flex;
+  flex-flow: row;
+}
+footer .footer .socialMedia div {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 7px;
+  margin-left: 8px;
+  cursor: pointer;
+  background: #BAC1D3;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+footer .footer .socialMedia div:hover {
+  background: #7000FF;
+  transition: 0.3s;
+}
+@media (max-width: 1024px) {
+  footer {
+    height: min-content;
+  }
+  footer .footer {
+    flex-direction: column;
+    justify-content: unset;
+    padding-bottom: 20px;
+  }
+  footer .footer .links {
+    margin: 30px 0 34px;
+  }
+  footer .footer .links a {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  footer .footer .links a:last-child {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 768px) {
+  footer .footer {
+    align-items: start;
+  }
+  footer .footer .links {
+    flex-direction: column;
+  }
+  footer .footer .links a {
+    margin-bottom: 12px;
+  }
+  footer .footer .socialMedia div {
+    margin-left: 0;
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 1250px) {
+  header .header {
+    max-width: 1170px;
+    padding: 0 15px;
+  }
+}
+@media (max-width: 1024px) {
+  header {
+    height: auto;
+  }
+  header .header .left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  header .header .left .logoAndButton {
+    display: flex;
+    justify-content: space-between;
+  }
+  header .header .left .logoAndButton .logo svg {
+    width: 200px;
+  }
+  header .header .left .logoAndButton .coursesBtn {
+    height: 35px;
+    width: 46px;
+    display: flex;
+    justify-content: center;
+    margin: 11px 0 12px;
+  }
+  header .header .left .logoAndButton .coursesBtn svg {
+    left: 10px;
+  }
+  header .header .left .logoAndButton .coursesBtn #x {
+    left: 13px;
+  }
+  header .header .left .logoAndButton .coursesBtn p {
+    display: none;
+  }
+  header .header .feedback {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=normal.css.map */

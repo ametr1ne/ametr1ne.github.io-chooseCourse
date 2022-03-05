@@ -1,0 +1,196 @@
+@import "../../variables";
+
+.cards-box {
+  background: #F6F7FF;
+  padding-top: 60px;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    align-items: first baseline;
+
+    .card {
+      background: $white;
+      border-radius: 7px;
+      padding: 30px 30px 21px;
+      position: relative;
+
+      &__up {
+        display: grid;
+        grid-template-areas:
+                "name name logo"
+                "rating feedNum logo";
+        grid-template-columns: min-content 1fr;
+        margin-bottom: 0;
+        padding-bottom: 18px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+        .name {
+          grid-area: name;
+          margin-top: 0;
+          margin-bottom: 16px;
+          font-weight: 600;
+          font-size: 23px;
+          line-height: 28px;
+          color: $black;
+        }
+
+        .logo {
+          grid-area: logo;
+          justify-self: end;
+          width: 140px;
+          height: 60px;
+          background-position: right top;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+
+        .rating {
+          align-self: center;
+          grid-area: rating;
+          padding: 0;
+        }
+
+        .feedNum {
+          margin-left: 14px;
+          grid-area: feedNum;
+          color: $violet;
+          transition: color 0.3s;
+
+          &:hover {
+            color: $purple;
+            transition: color 0.3s;
+          }
+        }
+      }
+
+      &__desc {
+        padding-top: 21px;
+        padding-bottom: 21px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+        position: relative;
+
+        .desc-limiter {
+          overflow: hidden;
+          max-height: 65px;
+          transition: max-height 0.3s;
+
+          .desc {
+            p {
+              font-size: 18px;
+              line-height: 126%;
+              margin-bottom: 25px;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+
+          }
+        }
+
+        .arrow-btn {
+          position: absolute;
+          background-color: $white;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 24px;
+          width: 24px;
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+          right: 50%;
+          margin-right: -12px;
+          bottom: -12px;
+
+          svg {
+            transition: trasform 0.3s;
+          }
+        }
+      }
+
+      &__buttons {
+        display: grid;
+        padding-top: 30px;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 30px;
+
+        .btn {
+          box-sizing: border-box;
+          border-radius: 7px;
+          height: 60px;
+          font-family: $museo-bold;
+          font-size: 18px;
+          line-height: 22px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: all 0.3s;
+
+          &:hover {
+            background-color: $purple;
+            color: $white;
+            transition: all 0.3s;
+          }
+        }
+
+        .to-site_btn {
+          background: #7000FF;
+          color: $white
+        }
+
+        .to-details_btn {
+          border: 1px solid rgba(112, 0, 255, 0.3);
+          color: $violet;
+        }
+      }
+    }
+
+    .open-arrow {
+      .card__desc {
+        .desc-limiter {
+          max-height: 400px;
+          transition: max-height 0.3s;
+        }
+
+        .arrow-btn {
+          svg {
+            transform: rotate(180deg);
+            transition: transform 0.3s;
+          }
+        }
+      }
+    }
+  }
+
+  &__pages {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+
+    .pages-list {
+      display: flex;
+      width: 195px;
+      justify-content: space-between;
+
+      .page {
+        font-size: 18px;
+        line-height: 140%;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      .selected-page {
+        color: $violet;
+        background-color: $white;
+        box-shadow: 0px 5px 30px rgba(41, 8, 13, 0.15);
+      }
+    }
+  }
+}

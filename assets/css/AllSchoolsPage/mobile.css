@@ -1,0 +1,54 @@
+@media (max-width: 1024px) {
+  .cards-box {
+    padding-top: 31px;
+    padding-bottom: 18px;
+  }
+  .cards-box__container {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  .cards-box__pages {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .cards-box__container .card {
+    padding: 20px 20px 17px;
+  }
+  .cards-box__container .card__up {
+    grid-template-areas: "name" "feedNum" "rating";
+    grid-template-columns: 1fr;
+    padding-bottom: 21px;
+  }
+  .cards-box__container .card__up .name {
+    font-size: 19px;
+    line-height: 23px;
+    margin-bottom: 0;
+  }
+  .cards-box__container .card__up .logo {
+    display: none;
+  }
+  .cards-box__container .card__up .feedNum {
+    margin-left: 0;
+    font-size: 16px;
+    line-height: 220%;
+    margin-bottom: 4px;
+  }
+  .cards-box__container .card__desc {
+    padding-bottom: 19px;
+    padding-top: 13px;
+  }
+  .cards-box__container .card__desc .desc-limiter {
+    max-height: 80px;
+  }
+  .cards-box__container .card__desc .desc-limiter .desc p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .cards-box__container .card__buttons {
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+  }
+}
+
+/*# sourceMappingURL=mobile.css.map */

@@ -1,0 +1,133 @@
+@media (max-width: 1024px) {
+  .headPresent {
+    margin-top: 58px;
+  }
+  .headPresent .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .headPresent .wrapper .left {
+    display: flex;
+    position: static;
+  }
+  .headPresent .wrapper .left h1 {
+    margin-top: 47px;
+    font-size: 30px;
+  }
+  .headPresent .wrapper .left p {
+    font-size: 16px;
+  }
+  .headPresent .wrapper .left .chooseCourseButton {
+    height: 60px;
+    width: 100%;
+  }
+  .headPresent .wrapper .girlHead {
+    margin: 30px auto 0;
+    position: static;
+  }
+}
+@media (max-width: 768px) {
+  .headPresent .girlHead {
+    width: 290px;
+    height: 346px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .coursesBlock {
+    margin-top: 43px;
+    margin-bottom: 30px;
+  }
+  .coursesBlock h2 {
+    font-size: 25px;
+  }
+  .coursesBlock .cards {
+    padding-top: 24px;
+  }
+  .coursesBlock .cards .card {
+    width: 49%;
+    min-height: auto;
+    padding: 20px;
+  }
+  .coursesBlock .cards .card:nth-child(3n) {
+    margin-right: 2%;
+  }
+  .coursesBlock .cards .card:nth-child(2n) {
+    margin-right: 0;
+  }
+  .coursesBlock .cards .card .title p {
+    font-size: 19px;
+    line-height: 23px;
+  }
+  .coursesBlock .cards .card .list {
+    margin-top: 17px;
+  }
+  .coursesBlock .cards .card .list li a {
+    font-size: 16px;
+  }
+  .coursesBlock .cards .card .dropDownBlock hr {
+    margin-top: 25px;
+  }
+  .coursesBlock .cards .card .dropDownBlock .expandBlock .expand {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .coursesBlock .cards .card {
+    width: 100%;
+    margin-right: 0;
+  }
+  .coursesBlock .cards .card:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .feedbackBlock .marquee {
+    animation: none;
+    display: flex;
+    margin: 0 15px;
+  }
+  .feedbackBlock .marquee .marqueeItems {
+    display: flex;
+    margin: 0;
+    width: 100%;
+  }
+  .feedbackBlock .marquee .marqueeItems:nth-child(n+2) {
+    display: none;
+  }
+  .feedbackBlock .marquee .marqueeItems .feedbackCard {
+    width: 100%;
+    margin: 0 auto 10px;
+    box-sizing: border-box;
+    padding: 12px 0 16px 19px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "up" "feedNum" "rating";
+  }
+  .feedbackBlock .marquee .marqueeItems .feedbackCard:nth-child(n+4) {
+    display: none;
+  }
+  .feedbackBlock .marquee .marqueeItems .feedbackCard:nth-child(3) {
+    margin-bottom: 0;
+  }
+  .feedbackBlock .marquee .marqueeItems .feedbackCard .up {
+    padding: 0;
+    line-height: 23px;
+  }
+  .feedbackBlock .marquee .marqueeItems .feedbackCard .up .name {
+    font-size: 19px;
+  }
+  .feedbackBlock .marquee .marqueeItems .feedbackCard .up .logoCentr {
+    display: none;
+  }
+  .feedbackBlock .marquee .marqueeItems .feedbackCard .feedNum {
+    margin-left: 0;
+    margin-bottom: 4px;
+  }
+  .feedbackBlock .feedbackButton {
+    margin: 30px auto 20px;
+    height: 60px;
+  }
+}
+
+/*# sourceMappingURL=mobile.css.map */

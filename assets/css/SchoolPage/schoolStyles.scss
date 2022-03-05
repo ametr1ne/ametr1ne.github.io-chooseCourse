@@ -1,0 +1,19 @@
+@import "blocks/feedbacksBlock";
+@import "blocks/allCoursesBlock";
+
+@import "../templates/headBlock";
+@import "../templates/rating";
+@import "../templates/form";
+@import "../templates/popup";
+
+.head-present {
+  background: $white;
+
+  .content {
+    .box {
+      .title {
+        max-width: unset;
+      }
+    }
+  }
+}

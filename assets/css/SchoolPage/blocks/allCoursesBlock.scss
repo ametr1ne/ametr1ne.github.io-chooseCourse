@@ -1,0 +1,94 @@
+@use "../../DesignPage/blocks/coursesTableBlock";
+@import "../../variables";
+
+.all-courses {
+  padding-top: 103px;
+  padding-bottom: 120px;
+
+  h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .courses-table {
+
+    &__info {
+      margin-top: 42px;
+
+      .courses-table__sort {
+        & > p {
+          margin-right: 38px;
+        }
+
+        .rating-btn {
+          width: unset;
+          height: unset;
+          margin-right: 37px;
+        }
+
+        .free-btn {
+          width: unset;
+          height: unset;
+        }
+
+        .sort-set {
+          color: $violet;
+
+          &:hover {
+            color: $purple;
+          }
+        }
+      }
+    }
+
+    &__item {
+      padding-top: 23px;
+      padding-bottom: 23px;
+    }
+
+    &__table {
+      .row {
+        display: grid;
+        grid-template-areas:"courname rkc school price credit duration linkitem";
+        grid-template-columns: 1fr 107px 154px minmax(100px, 150px) 150px 150px 160px;
+        grid-template-rows: min-content;
+
+        .name-item {
+          margin-bottom: 0;
+          .name-link {
+            font-family: "Museo Sans Cyrl 300", serif;
+            color: $violet;
+            transition: color 0.3s;
+
+            &:hover {
+              color: $purple;
+              transition: color 0.3s;
+            }
+          }
+        }
+
+        .link-item {
+          .link {
+            color: $violet;
+            font-size: 18px;
+            line-height: 140%;
+            border-radius: 7px;
+            position: relative;
+            top: -10px;
+            left: -23px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s;
+
+            &:hover {
+              color: $white;
+              background: #7000FF;
+              transition: all 0.3s;
+            }
+          }
+        }
+      }
+    }
+  }
+}

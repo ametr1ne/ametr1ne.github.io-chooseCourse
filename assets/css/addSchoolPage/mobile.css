@@ -1,0 +1,17 @@
+@media (max-width: 1024px) {
+  .school-form {
+    padding: 17px 20px 18px;
+    margin: 48px auto;
+  }
+  .school-form .label {
+    font-size: 19px;
+  }
+  .school-form p, .school-form input {
+    font-size: 16px;
+  }
+  .school-form .input {
+    margin-bottom: 10px;
+  }
+}
+
+/*# sourceMappingURL=mobile.css.map */

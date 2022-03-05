@@ -1,0 +1,19 @@
+@import "../variables";
+
+.school-form {
+  @media (max-width: $md) {
+    padding: 17px 20px 18px;
+    margin: 48px auto;
+    .label {
+      font-size: 19px;
+    }
+
+    p, input {
+      font-size: 16px;
+    }
+
+    .input {
+      margin-bottom: 10px;
+    }
+  }
+}

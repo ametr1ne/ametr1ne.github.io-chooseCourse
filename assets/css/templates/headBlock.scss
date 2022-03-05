@@ -1,0 +1,76 @@
+@import "../variables";
+
+.head-present {
+  width: 100%;
+  padding-top: 109px;
+  background: #FCF1FF;
+
+  .box {
+    display: grid;
+    grid-template-areas:
+            "navigation headimage"
+            "title headimage";
+    grid-template-columns: 1fr;
+  }
+
+  .navigation {
+    font-size: 18px;
+    margin-top: 60px;
+    grid-area: navigation;
+
+    span {
+      color: #A3AABC;
+    }
+  }
+
+  .title {
+    grid-area: title;
+    max-width: 874px;
+    margin-top: 43px;
+    font-family: 'Museo Sans Cyrl 500', serif;
+    font-size: 60px;
+    margin-bottom: 44px;
+  }
+
+  .head-image {
+    margin-top: 60px;
+    grid-area: headimage;
+
+    &__image {
+      width: 170px;
+      height: 170px;
+    }
+  }
+
+  @media (max-width: $md) {
+    padding-top: 58px;
+
+    .box {
+      grid-template-areas:
+              "navigation"
+              "headimage"
+              "title";
+    }
+
+    .navigation {
+      font-size: 16px;
+      margin-top: 24px;
+    }
+
+    .title {
+      max-width: 400px;
+      margin-top: 16px;
+      font-size: 30px;
+      margin-bottom: 22px;
+    }
+
+    .head-image {
+      margin-top: 26px;
+      &__image {
+        margin-top: 0;
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}

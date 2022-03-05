@@ -1,0 +1,55 @@
+@import "../../variables";
+
+.headPresent {
+  margin-top: 109px;
+  display: flex;
+  width: 100%;
+  min-height: 609px;
+  background: $violet;
+
+  .wrapper {
+    display: flex;
+    flex-flow: row;
+    position: relative;
+    justify-content: space-between;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      max-width: 657px;
+    }
+
+    h1 {
+      font-family: 'Museo Sans Cyrl 500', serif;
+      font-size: 60px;
+      color: $white;
+      margin-top: 125px;
+      margin-bottom: 25px;
+      z-index: 3;
+    }
+
+    p {
+      max-width: 471px;
+      font-size: 23px;
+      color: $white;
+      opacity: 0.7;
+      margin-bottom: 48px;
+    }
+
+    .chooseCourseButton {
+      width: 290px;
+      height: 70px;
+      top: 588px;
+      font-family: 'Museo Sans Cyrl 500', serif;
+      background: $white;
+      color: $violet;
+    }
+
+    .girlHead {
+      display: flex;
+      position: absolute;
+      right: 0;
+      margin-top: 47px;
+    }
+  }
+}

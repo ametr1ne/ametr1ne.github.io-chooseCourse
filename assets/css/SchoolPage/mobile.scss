@@ -1,0 +1,217 @@
+@import "../variables";
+
+.all-courses {
+  @media (max-width: $md) {
+    padding-top: 49px;
+    padding-bottom: 60px;
+
+    h2 {
+      font-size: 25px;
+      line-height: 30px;
+    }
+
+    .courses-table {
+      &__info {
+        margin-top: 16px;
+        margin-bottom: 18px;
+
+        .courses-table__sort {
+          & > p {
+            margin-right: 0;
+            margin-bottom: 0;
+          }
+
+          a {
+            font-size: 16px;
+          }
+
+          .rating-btn {
+            margin-right: 20px;
+          }
+
+          .sort-set {
+            color: $violet;
+
+            &:hover {
+              color: $purple;
+            }
+          }
+        }
+      }
+
+      &__table {
+        .row {
+          grid-template-areas:"courname rkc";
+          grid-template-columns: 1fr 48px;
+
+          .name-item {
+            .name-link {
+              color: $black;
+              transition: color 0.3s;
+
+              &:hover {
+                color: $violet;
+                transition: color 0.3s;
+              }
+            }
+          }
+
+          .school, .school-item, .price-item, .credit-item, .duration-item, .link-item {
+            display: none;
+          }
+        }
+
+        .table-title {
+          .rkc {
+            &__popup {
+              .popup-content {
+                &::before {
+                  left: unset;
+                  right: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &__item {
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        .list-item {
+          grid-template-areas: "course rkc";
+        }
+      }
+    }
+  }
+}
+
+.feedbacks-box {
+  @media (max-width: $md) {
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+    .content {
+      grid-template-columns: 1fr;
+      grid-column-gap: unset;
+    }
+
+    &__desc {
+      p, strong {
+        font-size: 16px;
+      }
+    }
+
+    h2 {
+      margin-top: 32px;
+      font-size: 25px;
+      line-height: 30px;
+      margin-bottom: 24px;
+    }
+
+    &__feeds {
+      grid-row-gap: 20px;
+
+      .feed-item {
+        padding: 17px 19px 22px;
+
+        .personal-info {
+          .up {
+            flex-direction: column;
+            margin-bottom: 7px;
+
+            .name {
+              font-size: 16px;
+              margin-right: 0;
+              margin-bottom: 4px;
+            }
+
+            .rating {
+              font-size: 21px;
+              margin-bottom: 0;
+            }
+          }
+
+          .sub-up {
+            flex-direction: column;
+            margin-bottom: 17px;
+
+            time, p {
+              font-size: 14px;
+            }
+
+            time {
+              margin-right: 0;
+            }
+          }
+        }
+
+        .feed-body {
+          p {
+            font-size: 16px;
+            margin-bottom: 15px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .cards-box__pages {
+      margin: 20px 0 48px;
+    }
+
+    .feedback-form {
+      padding: 17px 19px 18px;
+
+      .label {
+        font-size: 19px;
+        line-height: 23px;
+        margin-bottom: 10px;
+      }
+
+      .input {
+        padding: 14px 14px 14px 0;
+        margin-bottom: 10px;
+        font-size: 16px;
+
+        &:last-child {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    .right-side {
+      grid-row-start: 1;
+
+      .school-card {
+        position: static;
+        margin-top: 0;
+        padding: 23px 22px 17px;
+        width: 100%;
+        max-width: none;
+        font-size: 16px;
+        line-height: 19px;
+      }
+
+      .school-info {
+        margin-top: 20px;
+        margin-bottom: 22px;
+        padding: 18px 20px;
+
+        span {
+          font-size: 14px;
+        }
+
+        p {
+          font-size: 16px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+  }
+}

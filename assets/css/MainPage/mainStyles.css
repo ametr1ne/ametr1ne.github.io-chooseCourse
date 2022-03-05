@@ -1,0 +1,430 @@
+@charset "UTF-8";
+.headPresent {
+  margin-top: 109px;
+  display: flex;
+  width: 100%;
+  min-height: 609px;
+  background: #7000FF;
+}
+.headPresent .wrapper {
+  display: flex;
+  flex-flow: row;
+  position: relative;
+  justify-content: space-between;
+}
+.headPresent .wrapper .left {
+  display: flex;
+  flex-direction: column;
+  max-width: 657px;
+}
+.headPresent .wrapper h1 {
+  font-family: "Museo Sans Cyrl 500", serif;
+  font-size: 60px;
+  color: #ffffff;
+  margin-top: 125px;
+  margin-bottom: 25px;
+  z-index: 3;
+}
+.headPresent .wrapper p {
+  max-width: 471px;
+  font-size: 23px;
+  color: #ffffff;
+  opacity: 0.7;
+  margin-bottom: 48px;
+}
+.headPresent .wrapper .chooseCourseButton {
+  width: 290px;
+  height: 70px;
+  top: 588px;
+  font-family: "Museo Sans Cyrl 500", serif;
+  background: #ffffff;
+  color: #7000FF;
+}
+.headPresent .wrapper .girlHead {
+  display: flex;
+  position: absolute;
+  right: 0;
+  margin-top: 47px;
+}
+
+.ourNumbers {
+  padding-top: 87px;
+  display: flex;
+  flex-direction: row;
+}
+.ourNumbers .numbers {
+  display: flex;
+}
+.ourNumbers .schools {
+  display: flex;
+  flex-direction: column;
+  margin-right: 125px;
+}
+.ourNumbers .schools span {
+  margin-left: 5px;
+}
+.ourNumbers .courses {
+  display: flex;
+  flex-direction: column;
+  margin-right: 92px;
+}
+.ourNumbers .courses span {
+  margin-left: 5px;
+}
+.ourNumbers p {
+  line-height: 140%;
+}
+.ourNumbers .desc {
+  font-weight: normal;
+  font-size: 23px;
+  color: #000000;
+  padding-top: 23px;
+}
+.ourNumbers .desc .desc_1 {
+  padding-bottom: 30px;
+}
+.ourNumbers strong {
+  font-family: "Museo Sans Cyrl 500", serif;
+  font-size: 60px;
+  color: #000000;
+}
+@media (max-width: 1024px) {
+  .ourNumbers {
+    padding-top: 40px;
+    flex-direction: column;
+  }
+  .ourNumbers .schools {
+    margin-right: 78px;
+  }
+  .ourNumbers .courses {
+    margin-right: 0;
+  }
+  .ourNumbers .dig {
+    flex-direction: row;
+  }
+  .ourNumbers .dig span {
+    margin-left: 5px;
+    padding-top: 13px;
+  }
+  .ourNumbers .desc {
+    font-size: 16px;
+  }
+  .ourNumbers .desc .desc_1 {
+    padding-bottom: 15px;
+  }
+  .ourNumbers strong {
+    font-size: 30px;
+  }
+}
+.coursesBlock {
+  margin: 96px 0 90px;
+}
+.coursesBlock .cards {
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 50px;
+  align-items: flex-start;
+  width: 100%;
+}
+.coursesBlock .cards #analyticCard {
+  background: #F1F5FF;
+}
+.coursesBlock .cards #designCard {
+  background: #FCF1FF;
+}
+.coursesBlock .cards #foreignLangCard {
+  background: #FFFBD6;
+}
+.coursesBlock .cards #marketingCard {
+  background: #F1FFE6;
+}
+.coursesBlock .cards #programCard {
+  background: #FFEEE1;
+}
+.coursesBlock .cards #manageCard {
+  background: #FFEAEA;
+}
+.coursesBlock .cards .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 2% 30px 0;
+  width: 32%;
+  min-height: 455px;
+  border-radius: 7px;
+  padding: 30px 30px 16px;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+.coursesBlock .cards .card:nth-child(3n) {
+  margin-right: 0;
+}
+.coursesBlock .cards .card .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 23px;
+  font-family: "Museo Sans Cyrl 500", serif;
+  line-height: 28px;
+}
+.coursesBlock .cards .card .title img {
+  top: 20px;
+  right: 20px;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+}
+.coursesBlock .cards .card .title p {
+  margin: auto 0;
+  font-family: "Museo Sans Cyrl 500", serif;
+  font-size: 23px;
+  line-height: 28px;
+}
+.coursesBlock .cards .card .list {
+  margin-top: 28px;
+  max-height: 273px;
+  overflow: hidden;
+  transition: max-height 0.3s;
+}
+.coursesBlock .cards .card .list ul li .expand {
+  display: list-item;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.coursesBlock .cards .card .list ul li {
+  margin-bottom: 20px;
+  list-style: none;
+  font-weight: normal;
+  font-size: 18px;
+  color: #000000;
+}
+.coursesBlock .cards .card .list ul li:last-child {
+  margin-bottom: 5px;
+}
+.coursesBlock .cards .card .dropDownBlock {
+  width: 100%;
+}
+.coursesBlock .cards .card .dropDownBlock hr {
+  margin: 36px 0 0;
+  opacity: 0.15;
+}
+.coursesBlock .cards .card .dropDownBlock .expandBlock {
+  display: flex;
+  flex-direction: row;
+  padding-top: 12px;
+}
+.coursesBlock .cards .card .dropDownBlock .expandBlock .dropCard {
+  transform: rotate(0deg);
+  transition: transform 0.3s;
+  margin-right: 11px;
+}
+.coursesBlock .cards .add .list {
+  max-height: 10000px;
+  transition: max-height 0.3s;
+}
+.coursesBlock .cards .add .dropDownBlock .expandBlock .dropCard {
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+}
+
+.feedbackBlock {
+  background: #F7F7FF;
+  padding: 30px 0 0;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+}
+.feedbackBlock .marquee {
+  animation: marquee 200s linear infinite;
+}
+.feedbackBlock .marquee .marqueeItems {
+  display: flex;
+  flex-direction: row;
+  margin-left: -195px;
+  float: left;
+  flex-wrap: wrap;
+}
+.feedbackBlock .marquee .marqueeItems .feedbackCard {
+  background: #FFFFFF;
+  border-radius: 7px;
+  cursor: pointer;
+  padding: 19px 30px;
+  box-sizing: border-box;
+  margin-right: 30px;
+  width: 570px;
+  margin-bottom: 30px;
+  position: relative;
+  height: 108px;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1) 0s;
+  display: grid;
+  grid-template-areas: "up up" "rating feedNum";
+  grid-template-columns: min-content 1fr;
+}
+.feedbackBlock .marquee .marqueeItems .feedbackCard:hover {
+  filter: drop-shadow(0px 3px 20px rgba(41, 8, 13, 0.15));
+  transition: all 0.3s;
+}
+.feedbackBlock .marquee .marqueeItems .feedbackCard:hover .rating > a {
+  color: #E8007D;
+}
+.feedbackBlock .marquee .marqueeItems .feedbackCard:nth-child(4) {
+  margin-left: 195px;
+}
+.feedbackBlock .marquee .marqueeItems .feedbackCard .up {
+  grid-area: up;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.feedbackBlock .marquee .marqueeItems .feedbackCard .up .name {
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 28px;
+  color: #000000;
+}
+.feedbackBlock .marquee .marqueeItems .feedbackCard .up .logoCentr {
+  width: 140px;
+  height: 38px;
+}
+.feedbackBlock .marquee .marqueeItems .feedbackCard .rating {
+  grid-area: rating;
+}
+.feedbackBlock .marquee .marqueeItems .feedbackCard .feedNum {
+  color: #7000FF;
+  margin-left: 16px;
+  grid-area: feedNum;
+  transition: color 0.3s;
+}
+.feedbackBlock .marquee .marqueeItems .feedbackCard .feedNum:hover {
+  color: #E8007D;
+  transition: color 0.3s;
+}
+@keyframes marquee {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  100% {
+    transform: translate(-5400px, 0%);
+  }
+}
+.feedbackBlock .feedbackButton {
+  width: 290px;
+  height: 70px;
+  font-family: "Museo Sans Cyrl 500", serif;
+  margin: 40px auto 50px;
+}
+
+.edPlatforms {
+  display: flex;
+  flex-direction: column;
+  margin-top: 103px;
+  margin-bottom: 99px;
+}
+.edPlatforms .lists {
+  margin-top: 54px;
+}
+.edPlatforms .lists .container {
+  overflow: hidden;
+  max-height: 650px;
+  transition: max-height 0.3s;
+}
+.edPlatforms .lists .container .platforms {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 640px;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+}
+.edPlatforms .lists .container .platforms li {
+  font-size: 18px;
+  margin-bottom: 18px;
+  color: #BAC1D3;
+  list-style: none;
+}
+.edPlatforms .lists .container .platforms li > a {
+  transition: all 0.3s;
+}
+.edPlatforms .lists .container .platforms li::before {
+  position: relative;
+  top: -1px;
+  margin: auto 31px auto 0;
+  content: "•";
+}
+.edPlatforms .lists .container .platforms li:last-child {
+  margin-bottom: 0;
+}
+.edPlatforms .lists .expandBlock {
+  display: none;
+}
+.edPlatforms .lists .expandBlock hr {
+  margin: 25px 0 12px;
+  opacity: 0.15;
+}
+.edPlatforms .lists .expandBlock .line {
+  display: flex;
+  align-items: center;
+}
+.edPlatforms .lists .expandBlock .line .dropCard {
+  margin-right: 15px;
+  transform: rotate(0deg);
+}
+.edPlatforms .lists .expandBlock .line .expand {
+  line-height: 190%;
+}
+.edPlatforms .addListItemsEdu .expandBlock .line .dropCard {
+  transform: rotate(180deg);
+}
+@media (max-width: 1024px) {
+  .edPlatforms {
+    margin-top: 49px;
+    margin-bottom: 50px;
+  }
+  .edPlatforms h2 {
+    font-size: 25px;
+  }
+  .edPlatforms .lists {
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+  }
+  .edPlatforms .lists .container {
+    max-height: 620px;
+  }
+  .edPlatforms .lists .container .platforms {
+    max-height: none;
+  }
+  .edPlatforms .lists .container .platforms li::before {
+    margin-right: 18px;
+  }
+  .edPlatforms .lists .container .platforms li a {
+    font-size: 16px;
+  }
+  .edPlatforms .lists .expandBlock {
+    display: block;
+  }
+  .edPlatforms .lists .expandBlock .line .expand {
+    font-size: 16px;
+  }
+  .edPlatforms .addListItemsEdu .container {
+    max-height: 1880px;
+    transition: max-height 0.3s;
+  }
+}
+
+.rating {
+  width: 115px;
+  height: 21px;
+  background: url("../../images/star_yellow.svg") repeat-x;
+}
+.rating .rating-fill {
+  height: 21px;
+  background: url("../../images/star_fill.svg") repeat-x;
+  width: 80%;
+}
+
+/*# sourceMappingURL=mainStyles.css.map */

@@ -1,0 +1,47 @@
+
+@import "../templates/headBlock";
+
+.head-present {
+  background: #F6F7FF;
+
+  .content {
+    .box {
+      .title {
+        max-width: unset;
+      }
+    }
+  }
+}
+
+.contacts {
+  max-width: 770px;
+  margin: 107px auto 113px;
+
+  p {
+    font-size: 23px;
+    line-height: 140%;
+    margin-bottom: 30px;
+
+    :last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      font-size: 23px;
+    }
+  }
+
+  @media (max-width: $md) {
+    margin: 54px auto 54px;
+    padding: 0 15px;
+
+    p {
+      font-size: 19px;
+      margin-bottom: 20px;
+
+      a {
+        font-size: 19px;
+      }
+    }
+  }
+}

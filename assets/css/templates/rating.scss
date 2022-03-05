@@ -1,0 +1,11 @@
+.rating {
+  width: 115px;
+  height: 21px;
+  background: url("../../images/star_yellow.svg") repeat-x;
+
+  .rating-fill {
+    height: 21px;
+    background: url("../../images/star_fill.svg") repeat-x;
+    width: 80%;
+  }
+}

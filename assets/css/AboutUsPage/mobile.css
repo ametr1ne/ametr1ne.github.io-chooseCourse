@@ -1,0 +1,93 @@
+@media (max-width: 1024px) {
+  .ourNumbers {
+    padding-top: 43px;
+    padding-bottom: 0;
+  }
+  .ourNumbers .dig {
+    flex-direction: row;
+  }
+  .ourNumbers .dig span {
+    margin-left: 5px;
+    padding-top: 13px;
+  }
+  .ourNumbers .desc {
+    font-size: 16px;
+  }
+  .ourNumbers .desc .desc_1 {
+    padding-bottom: 15px;
+  }
+  .ourNumbers strong {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .partners {
+    margin-top: 43px;
+    margin-bottom: 49px;
+  }
+  .partners__logos {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin-top: 24px;
+  }
+  .partners__logos .logos__item {
+    height: 130px;
+  }
+  .partners__add-school {
+    max-width: unset;
+  }
+}
+@media (max-width: 768px) {
+  .partners__logos {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1024px) {
+  .our-team {
+    margin-bottom: 54px;
+  }
+  .our-team__items {
+    margin-top: 24px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+  }
+  .our-team__item {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-column-gap: 15px;
+    grid-template-areas: "avatar name" "avatar post" "avatar desc" "avatar link";
+  }
+  .our-team__item .avatar {
+    grid-area: avatar;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0;
+  }
+  .our-team__item .name {
+    grid-area: name;
+    font-size: 19px;
+    margin-bottom: 7px;
+  }
+  .our-team__item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .our-team__item .post {
+    grid-area: post;
+  }
+  .our-team__item .desc {
+    grid-area: desc;
+  }
+  .our-team__item .social-link {
+    grid-area: link;
+  }
+}
+@media (max-width: 768px) {
+  .our-team__items {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=mobile.css.map */

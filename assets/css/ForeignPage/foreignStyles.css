@@ -1,0 +1,507 @@
+@charset "UTF-8";
+/*------------ Внутренние блоки ------------*/
+.courses-table {
+  margin-top: 44px;
+}
+.courses-table .grey-text {
+  font-size: 16px;
+  line-height: 22px;
+  color: #A3AABC;
+}
+.courses-table__info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 43px;
+}
+.courses-table__info .courses-table__sort {
+  display: flex;
+  align-items: center;
+}
+.courses-table__info .courses-table__sort > p {
+  margin-right: 19px;
+}
+.courses-table__info .courses-table__sort .sort-buttons {
+  display: flex;
+}
+.courses-table__info .courses-table__sort .rating-btn {
+  width: 172px;
+  height: 38px;
+  margin-right: 20px;
+}
+.courses-table__info .courses-table__sort .free-btn {
+  width: 143px;
+  height: 38px;
+}
+.courses-table__info .courses-table__author {
+  display: flex;
+  align-items: center;
+}
+.courses-table__info .courses-table__author .author {
+  margin-right: 38px;
+}
+.courses-table__info .courses-table__author .author > span {
+  color: #7000FF;
+  transition: color 0.3s;
+}
+.courses-table__info .courses-table__author .author > span:hover {
+  cursor: pointer;
+  color: #E8007D;
+  transition: color 0.3s;
+}
+.courses-table__info .courses-table__author .date > time {
+  color: #000000;
+}
+.courses-table__table .table-title {
+  margin-bottom: 27px;
+}
+.courses-table__table .table-title .rkc::after {
+  position: absolute;
+  top: -7px;
+  height: 16px;
+  width: 16px;
+  content: url("../../images/hint.png");
+}
+.courses-table__table .table-title .rkc__popup .popup-content {
+  min-width: 520px;
+}
+.courses-table__table .table-title .open-popup .rkc__popup {
+  z-index: 10;
+  visibility: visible;
+}
+.courses-table__table .courses-table__item {
+  transition: box-shadow 0.3s;
+  border-top: 1px solid #DFE3ED;
+  padding-top: 23px;
+  padding-bottom: 25px;
+  position: relative;
+  z-index: 2;
+}
+.courses-table__table .courses-table__item:last-child {
+  border-bottom: 1px solid #DFE3ED;
+}
+.courses-table__table .courses-table__item:hover {
+  cursor: pointer;
+  box-shadow: 0 5px 30px rgba(41, 8, 13, 0.15);
+  transition: box-shadow 0.3s;
+}
+.courses-table__table .row {
+  display: grid;
+  grid-template-areas: "sequence courname rkc school price credit duration linkitem" "sequence courlink rkc school price credit duration linkitem";
+  grid-template-columns: 25px 1fr 70px 1fr minmax(100px, 120px) 120px 120px 186px;
+}
+.courses-table__table .row .sequence-item {
+  grid-area: sequence;
+  color: #A3AABC;
+}
+.courses-table__table .row .name-item {
+  grid-area: courname;
+  font-family: "Museo Sans Cyrl 500";
+  font-size: 18px;
+  margin-bottom: 14px;
+  margin-right: 20px;
+}
+.courses-table__table .row .courlink-item {
+  grid-area: courlink;
+  font-size: 16px;
+  color: #7000FF;
+}
+.courses-table__table .row .courlink-item:hover {
+  color: #E8007D;
+}
+.courses-table__table .row .rkc-item {
+  grid-area: rkc;
+  font-size: 18px;
+  color: #169F00;
+}
+.courses-table__table .row .school-item {
+  grid-area: school;
+  padding-right: 10px;
+}
+.courses-table__table .row .school-item__name {
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+.courses-table__table .row .school-item__rating {
+  margin-bottom: 16px;
+}
+.courses-table__table .row .school-item__feedbacks {
+  font-size: 16px;
+  color: #7000FF;
+}
+.courses-table__table .row .school-item__feedbacks:hover {
+  color: #E8007D;
+}
+.courses-table__table .row .price-item, .courses-table__table .row .credit-item, .courses-table__table .row .duration-item {
+  font-size: 18px;
+}
+.courses-table__table .row .price-item {
+  grid-area: price;
+}
+.courses-table__table .row .credit-item {
+  grid-area: credit;
+}
+.courses-table__table .row .duration-item {
+  grid-area: duration;
+}
+.courses-table__table .row .link-item {
+  grid-area: linkitem;
+}
+.courses-table__table .row .link-item .link {
+  width: 186px;
+  height: 45px;
+  font-size: 18px;
+  padding: 0;
+}
+
+.course-details {
+  padding-top: 92px;
+  padding-bottom: 60px;
+  background: #F6F7FF;
+  position: relative;
+}
+.course-details__title {
+  line-height: 176%;
+  font-size: 40px;
+  font-family: "Museo Sans Cyrl 500";
+  margin-bottom: 39px;
+}
+.course-details__cards .cards-limiter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+}
+.course-details__cards .cards-limiter .card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 7px;
+  padding: 17px 20px 22px;
+  display: grid;
+  grid-template-rows: minmax(65px, auto) 48px auto min-content 1fr 60px;
+}
+.course-details__cards .cards-limiter .card__title {
+  font-size: 23px;
+  line-height: 28px;
+  font-family: "Museo Sans Cyrl 500";
+  padding-bottom: 11px;
+  display: flex;
+}
+.course-details__cards .cards-limiter .card__title h4 {
+  margin: auto 0;
+}
+.course-details__cards .cards-limiter .card__title .card__rating {
+  height: 54px;
+  min-width: 54px;
+  width: 54px;
+  border-radius: 50%;
+  background: #169F00;
+  margin-left: auto;
+}
+.course-details__cards .cards-limiter .card__title .card__rating .rating-num {
+  font-size: 23px;
+  font-family: "Museo Sans Cyrl 500";
+  color: #ffffff;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.course-details__cards .cards-limiter .card__title .card__rating .rating__popup {
+  padding-top: 40px;
+  margin-left: -15px;
+  margin-top: -20px;
+}
+.course-details__cards .cards-limiter .card__title .card__rating .rating__popup .popup-content {
+  min-width: 520px;
+}
+.course-details__cards .cards-limiter .card__title .open-popup .rating__popup {
+  z-index: 10;
+  visibility: visible;
+}
+.course-details__cards .cards-limiter .card:nth-child(2n) .rating__popup {
+  right: 1%;
+}
+.course-details__cards .cards-limiter .card:nth-child(2n) .rating__popup .popup-content:before {
+  left: unset;
+  right: 32px;
+}
+.course-details__cards .cards-limiter .card .subtitle {
+  color: #A3AABC;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.course-details__cards .cards-limiter .card span {
+  font-size: 18px;
+  color: #000000;
+}
+.course-details__cards .cards-limiter .card__feedback-block {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #DADADA;
+}
+.course-details__cards .cards-limiter .card__feedback-block .organization {
+  display: flex;
+  align-items: center;
+}
+.course-details__cards .cards-limiter .card__feedback-block .organization .name {
+  font-size: 18px;
+  line-height: 220%;
+  color: #7000FF;
+  margin-right: 11px;
+}
+.course-details__cards .cards-limiter .card__feedback-block .organization .rating {
+  margin-bottom: 0;
+}
+.course-details__cards .cards-limiter .card__feedback-block .feed-link {
+  line-height: 220%;
+}
+.course-details__cards .cards-limiter .card__quick-info {
+  margin-top: 29px;
+  display: grid;
+  grid-gap: 27px;
+  grid-template-columns: 50% 50%;
+}
+.course-details__cards .cards-limiter .card__quick-info .rate {
+  font-family: "Museo Sans Cyrl 500";
+}
+.course-details__cards .cards-limiter .card__level {
+  padding-top: 26px;
+}
+.course-details__cards .cards-limiter .card__advantages {
+  padding-top: 26px;
+  padding-bottom: 33px;
+}
+.course-details__cards .cards-limiter .card__course-btn {
+  width: 100%;
+  height: 60px;
+  background: #7000FF;
+  border-radius: 7px;
+  color: #ffffff;
+  margin-bottom: 0;
+  font-family: "Museo Sans Cyrl 500";
+}
+.course-details .expandBlock {
+  display: none;
+  margin-top: 21px;
+}
+.course-details .expandBlock hr {
+  opacity: 0.15;
+}
+.course-details .expandBlock .line {
+  display: flex;
+  align-items: center;
+}
+.course-details .expandBlock .line .expand-arrow {
+  margin-right: 15px;
+  transform: rotate(0deg);
+  transition: transform 0.3s;
+}
+.course-details .open-cards .expandBlock .expand-arrow {
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+}
+
+.courses-nav {
+  padding-top: 91px;
+  padding-bottom: 120px;
+}
+.courses-nav__title {
+  font-size: 40px;
+  line-height: 176%;
+  font-family: "Museo Sans Cyrl 500";
+  margin-bottom: 39px;
+}
+.courses-nav__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  align-items: first baseline;
+}
+.courses-nav__cards .card {
+  padding: 30px 28px 18px;
+  background: #F6F7FF;
+  border-radius: 7px;
+}
+.courses-nav__cards .card__name {
+  font-size: 23px;
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+.courses-nav__cards .card .list-limiter {
+  max-height: 168px;
+  transition: max-height 0.3s;
+  overflow: hidden;
+}
+.courses-nav__cards .card .list-limiter .list li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+.courses-nav__cards .card .list-limiter .list li:last-child {
+  margin-bottom: 0;
+}
+.courses-nav__cards .card .expandBlock {
+  margin-top: 25px;
+}
+.courses-nav__cards .card .expandBlock hr {
+  opacity: 0.15;
+  margin-bottom: 12px;
+}
+.courses-nav__cards .card .expandBlock .line {
+  display: flex;
+  align-items: center;
+}
+.courses-nav__cards .card .expandBlock .line .expand-arrow {
+  margin-right: 15px;
+  transform: rotate(0deg);
+  transition: transform 0.3s;
+}
+.courses-nav__cards .open-cards .list-limiter {
+  max-height: 1925px;
+  transition: max-height 0.3s;
+}
+.courses-nav__cards .open-cards .expandBlock .line .expand-arrow {
+  transform: rotate(180deg);
+  transition: transform 0.3s;
+}
+
+/*------------- Внешние блоки --------------*/
+.popup {
+  position: absolute;
+  margin-top: -20px;
+  padding-top: 40px;
+  z-index: -1;
+  visibility: hidden;
+}
+.popup .popup-content {
+  color: #000000;
+  z-index: 10;
+  padding: 23px 30px;
+  background: #ffffff;
+  border-radius: 7px;
+  max-width: 570px;
+  font-family: "Museo Sans Cyrl 300", serif;
+  box-shadow: 0 5px 30px rgba(41, 8, 13, 0.15);
+}
+.popup .popup-content::before {
+  position: absolute;
+  top: 27px;
+  left: 32px;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-bottom-color: #ffffff;
+}
+.popup .popup-content p, .popup .popup-content a {
+  font-size: 16px;
+  line-height: 130%;
+}
+.popup .popup-content p {
+  margin-bottom: 20px;
+}
+.popup .popup-content p strong {
+  font-family: "Museo Sans Cyrl 500";
+}
+.popup .popup-content a {
+  color: #7000FF;
+  transition: color 0.3s;
+}
+.popup .popup-content a:hover {
+  color: #E8007D;
+  transition: color 0.3s;
+}
+@media (max-width: 1024px) {
+  .popup {
+    left: 15px;
+    right: 15px;
+  }
+  .popup .popup-content {
+    padding: 16px;
+  }
+  .popup .popup-content p, .popup .popup-content a {
+    font-size: 14px;
+    line-height: 130%;
+  }
+  .popup .popup-content p {
+    margin-bottom: 10px;
+  }
+}
+
+.head-present {
+  width: 100%;
+  padding-top: 109px;
+  background: #FCF1FF;
+}
+.head-present .box {
+  display: grid;
+  grid-template-areas: "navigation headimage" "title headimage";
+  grid-template-columns: 1fr;
+}
+.head-present .navigation {
+  font-size: 18px;
+  margin-top: 60px;
+  grid-area: navigation;
+}
+.head-present .navigation span {
+  color: #A3AABC;
+}
+.head-present .title {
+  grid-area: title;
+  max-width: 874px;
+  margin-top: 43px;
+  font-family: "Museo Sans Cyrl 500", serif;
+  font-size: 60px;
+  margin-bottom: 44px;
+}
+.head-present .head-image {
+  margin-top: 60px;
+  grid-area: headimage;
+}
+.head-present .head-image__image {
+  width: 170px;
+  height: 170px;
+}
+@media (max-width: 1024px) {
+  .head-present {
+    padding-top: 58px;
+  }
+  .head-present .box {
+    grid-template-areas: "navigation" "headimage" "title";
+  }
+  .head-present .navigation {
+    font-size: 16px;
+    margin-top: 24px;
+  }
+  .head-present .title {
+    max-width: 400px;
+    margin-top: 16px;
+    font-size: 30px;
+    margin-bottom: 22px;
+  }
+  .head-present .head-image {
+    margin-top: 26px;
+  }
+  .head-present .head-image__image {
+    margin-top: 0;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.rating {
+  width: 115px;
+  height: 21px;
+  background: url("../../images/star_yellow.svg") repeat-x;
+}
+.rating .rating-fill {
+  height: 21px;
+  background: url("../../images/star_fill.svg") repeat-x;
+  width: 80%;
+}
+
+.head-present {
+  background: #FFFBD6;
+}
+
+/*# sourceMappingURL=foreignStyles.css.map */

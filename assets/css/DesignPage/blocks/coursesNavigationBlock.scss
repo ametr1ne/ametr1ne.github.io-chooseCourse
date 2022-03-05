@@ -1,0 +1,78 @@
+@import "../../variables";
+
+.courses-nav {
+  padding-top: 91px;
+  padding-bottom: 120px;
+
+  &__title {
+    font-size: 40px;
+    line-height: 176%;
+    font-family: $museo-bold;
+    margin-bottom: 39px;
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    align-items: first baseline;
+
+    .card {
+      padding: 30px 28px 18px;
+      background: #F6F7FF;
+      border-radius: 7px;
+
+      &__name {
+        font-size: 23px;
+        line-height: 28px;
+        margin-bottom: 25px;
+      }
+
+      .list-limiter {
+        max-height: 168px;
+        transition: max-height 0.3s;
+        overflow: hidden;
+        .list {
+          li {
+            list-style: none;
+            margin-bottom: 15px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+      .expandBlock {
+        margin-top: 25px;
+        hr {
+          opacity: 0.15;
+          margin-bottom: 12px;
+        }
+        .line {
+          display: flex;
+          align-items: center;
+          .expand-arrow {
+            margin-right: 15px;
+            transform: rotate(0deg);
+            transition: transform 0.3s;
+          }
+        }
+      }
+    }
+    .open-cards {
+      .list-limiter {
+        max-height: 1925px;
+        transition: max-height 0.3s;
+      }
+
+      .expandBlock {
+        .line {
+          .expand-arrow {
+            transform: rotate(180deg);
+            transition: transform 0.3s;
+          }
+        }
+      }
+    }
+  }
+}

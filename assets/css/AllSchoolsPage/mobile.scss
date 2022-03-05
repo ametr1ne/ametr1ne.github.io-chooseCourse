@@ -1,0 +1,71 @@
+@import "../variables";
+
+.cards-box {
+  @media (max-width: $md) {
+    padding-top: 31px;
+    padding-bottom: 18px;
+
+    &__container {
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+    }
+
+    &__pages {
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: $sm) {
+    &__container {
+      .card {
+        padding: 20px 20px 17px;
+
+        &__up {
+          grid-template-areas:
+                "name"
+                "feedNum"
+                "rating";
+          grid-template-columns: 1fr;
+          padding-bottom: 21px;
+
+          .name {
+            font-size: 19px;
+            line-height: 23px;
+            margin-bottom: 0;
+          }
+
+          .logo {
+            display: none;
+          }
+
+          .feedNum {
+            margin-left: 0;
+            font-size: 16px;
+            line-height: 220%;
+            margin-bottom: 4px;
+          }
+        }
+
+        &__desc {
+          padding-bottom: 19px;
+          padding-top: 13px;
+          .desc-limiter {
+            max-height: 80px;
+
+            .desc {
+              p {
+                font-size: 16px;
+                margin-bottom: 15px;
+              }
+            }
+          }
+        }
+
+        &__buttons {
+          grid-template-columns: 1fr;
+          grid-row-gap: 10px;
+        }
+      }
+    }
+  }
+}

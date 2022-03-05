@@ -1,0 +1,71 @@
+.ourNumbers {
+  padding-top: 87px;
+  display: flex;
+  flex-direction: row;
+}
+.ourNumbers .numbers {
+  display: flex;
+}
+.ourNumbers .schools {
+  display: flex;
+  flex-direction: column;
+  margin-right: 125px;
+}
+.ourNumbers .schools span {
+  margin-left: 5px;
+}
+.ourNumbers .courses {
+  display: flex;
+  flex-direction: column;
+  margin-right: 92px;
+}
+.ourNumbers .courses span {
+  margin-left: 5px;
+}
+.ourNumbers .desc {
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 28px;
+  color: #000000;
+  padding-top: 23px;
+}
+.ourNumbers .desc .desc_1 {
+  padding-bottom: 30px;
+}
+.ourNumbers strong {
+  font-family: "Museo Sans Cyrl 500", serif;
+  font-size: 60px;
+  color: #000000;
+}
+@media (max-width: 1024px) {
+  .ourNumbers {
+    padding-top: 40px;
+    flex-direction: column;
+  }
+  .ourNumbers .schools {
+    margin-right: 78px;
+  }
+  .ourNumbers .courses {
+    margin-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .ourNumbers .dig {
+    flex-direction: row;
+  }
+  .ourNumbers .dig span {
+    margin-left: 5px;
+    padding-top: 13px;
+  }
+  .ourNumbers .desc {
+    font-size: 16px;
+  }
+  .ourNumbers .desc .desc_1 {
+    padding-bottom: 15px;
+  }
+  .ourNumbers strong {
+    font-size: 30px;
+  }
+}
+
+/*# sourceMappingURL=ourNumbersBlock.css.map */

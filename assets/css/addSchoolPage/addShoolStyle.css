@@ -1,0 +1,203 @@
+.head-present {
+  width: 100%;
+  padding-top: 109px;
+  background: #FCF1FF;
+}
+.head-present .box {
+  display: grid;
+  grid-template-areas: "navigation headimage" "title headimage";
+  grid-template-columns: 1fr;
+}
+.head-present .navigation {
+  font-size: 18px;
+  margin-top: 60px;
+  grid-area: navigation;
+}
+.head-present .navigation span {
+  color: #A3AABC;
+}
+.head-present .title {
+  grid-area: title;
+  max-width: 874px;
+  margin-top: 43px;
+  font-family: "Museo Sans Cyrl 500", serif;
+  font-size: 60px;
+  margin-bottom: 44px;
+}
+.head-present .head-image {
+  margin-top: 60px;
+  grid-area: headimage;
+}
+.head-present .head-image__image {
+  width: 170px;
+  height: 170px;
+}
+@media (max-width: 1024px) {
+  .head-present {
+    padding-top: 58px;
+  }
+  .head-present .box {
+    grid-template-areas: "navigation" "headimage" "title";
+  }
+  .head-present .navigation {
+    font-size: 16px;
+    margin-top: 24px;
+  }
+  .head-present .title {
+    max-width: 400px;
+    margin-top: 16px;
+    font-size: 30px;
+    margin-bottom: 22px;
+  }
+  .head-present .head-image {
+    margin-top: 26px;
+  }
+  .head-present .head-image__image {
+    margin-top: 0;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.form {
+  background: #FFFFFF;
+  border-radius: 7px;
+  padding: 30px 30px 25px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+.form .label {
+  font-size: 23px;
+  line-height: 28px;
+  font-family: "Museo Sans Cyrl 500";
+  margin-bottom: 20px;
+}
+.form .input-box {
+  transition: margin-top 0.3s;
+  position: relative;
+}
+.form .input-box label {
+  transform: translateY(16px);
+  position: absolute;
+  color: #A3AABC;
+  cursor: text;
+  font-size: 18px;
+  transition: transform, font-size 0.3s;
+}
+.form .input-box .input {
+  width: 100%;
+  padding: 16px 16px 16px 0;
+  margin-bottom: 20px;
+  font-family: inherit;
+  font-size: 18px;
+  box-sizing: border-box;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+.form .input-box .input:last-child {
+  margin-bottom: 40px;
+}
+@media (max-width: 1024px) {
+  .form .input-box .input:last-child {
+    margin-bottom: 31px;
+  }
+}
+.form .input-box .textarea {
+  overflow: hidden;
+  padding-bottom: 0;
+}
+.form .moving-lables {
+  transition: margin-top 0.3s;
+}
+.form .moving-lables label {
+  font-size: 16px;
+  cursor: default;
+  transform: translateY(-16px);
+  transition: font-size, transform 0.3s;
+}
+@media (max-width: 1024px) {
+  .form .moving-lables label {
+    font-size: 14px !important;
+  }
+}
+.form .send {
+  height: 60px;
+  font-family: "Museo Sans Cyrl 500";
+}
+@media (max-width: 1024px) {
+  .form .input-box label {
+    transition: font-size, transform 0.3s;
+    font-size: 16px;
+  }
+}
+
+.clear-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.clear-form .label, .clear-form p, .clear-form label, .clear-form .input, .clear-form .send {
+  visibility: hidden;
+}
+.clear-form h3 {
+  position: absolute;
+  font-size: 23px;
+  line-height: 140%;
+  text-align: center;
+  font-family: "Museo Sans Cyrl 500";
+}
+@media (max-width: 1024px) {
+  .clear-form h3 {
+    font-size: 19px;
+    line-height: 23px;
+  }
+}
+
+.head-present {
+  background: #F6F7FF;
+}
+.head-present .content .box .title {
+  max-width: unset;
+}
+
+.school-form {
+  margin: 60px auto 120px;
+  box-shadow: 0 5px 30px rgba(41, 8, 13, 0.15);
+  max-width: 770px;
+}
+.school-form p {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+.school-form .label {
+  font-size: 23px;
+  line-height: 28px;
+  margin-bottom: 24px;
+}
+.school-form .input {
+  padding: 16px 16px 16px 0;
+  margin-bottom: 20px;
+  font-family: inherit;
+  font-size: inherit;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+.school-form .input::placeholder {
+  color: #A3AABC;
+}
+.school-form .input:last-child {
+  margin-bottom: 40px;
+}
+.school-form .send {
+  height: 60px;
+  font-family: "Museo Sans Cyrl 500";
+  margin-top: 9px;
+}
+
+/*# sourceMappingURL=addShoolStyle.css.map */

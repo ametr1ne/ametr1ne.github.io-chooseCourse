@@ -1,0 +1,127 @@
+.head-present {
+  width: 100%;
+  padding-top: 109px;
+  background: #FCF1FF;
+}
+.head-present .box {
+  display: grid;
+  grid-template-areas: "navigation headimage" "title headimage";
+  grid-template-columns: 1fr;
+}
+.head-present .navigation {
+  font-size: 18px;
+  margin-top: 60px;
+  grid-area: navigation;
+}
+.head-present .navigation span {
+  color: #A3AABC;
+}
+.head-present .title {
+  grid-area: title;
+  max-width: 874px;
+  margin-top: 43px;
+  font-family: "Museo Sans Cyrl 500", serif;
+  font-size: 60px;
+  margin-bottom: 44px;
+}
+.head-present .head-image {
+  margin-top: 60px;
+  grid-area: headimage;
+}
+.head-present .head-image__image {
+  width: 170px;
+  height: 170px;
+}
+@media (max-width: 1024px) {
+  .head-present {
+    padding-top: 58px;
+  }
+  .head-present .box {
+    grid-template-areas: "navigation" "headimage" "title";
+  }
+  .head-present .navigation {
+    font-size: 16px;
+    margin-top: 24px;
+  }
+  .head-present .title {
+    max-width: 400px;
+    margin-top: 16px;
+    font-size: 30px;
+    margin-bottom: 22px;
+  }
+  .head-present .head-image {
+    margin-top: 26px;
+  }
+  .head-present .head-image__image {
+    margin-top: 0;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.head-present {
+  background: #F6F7FF;
+}
+.head-present .content .box .title {
+  max-width: unset;
+}
+
+.article {
+  margin: 0 auto;
+  max-width: 770px;
+  padding-top: 43px;
+  padding-bottom: 114px;
+}
+.article h2 {
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 20px;
+}
+.article h3 {
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+.article p {
+  font-size: 18px;
+  line-height: 140%;
+  margin-bottom: 15px;
+}
+.article img {
+  width: 100%;
+  margin-top: 19px;
+  margin-bottom: 30px;
+}
+.article strong, .article h3 {
+  font-family: "Museo Sans Cyrl 500";
+}
+.article a {
+  color: #7000FF;
+  transition: color 0.3s;
+}
+.article a:hover {
+  color: #E8007D;
+}
+@media (max-width: 1024px) {
+  .article {
+    padding: 19px 15px 54px;
+  }
+  .article h2 {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 14px;
+  }
+  .article h3 {
+    font-size: 19px;
+    margin-bottom: 12px;
+  }
+  .article p, .article strong {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .article img {
+    margin-top: 12px;
+    margin-bottom: 22px;
+  }
+}
+
+/*# sourceMappingURL=rckStyles.css.map */
